@@ -71,7 +71,7 @@ def taobao_users_get_xml
             <location>
                 <zip>310000</zip>
                 <address>华星路99号创业大厦</address>
-                <city>杭州</city>
+                <city>杭州</city> class for root element name
                 <state>浙江</state>
                 <country>中国</country>
                 <district>西湖区</district>
@@ -134,5 +134,70 @@ def taobao_itemcats_authorize_get_xml
         </brands>
     </seller_authorize>
 </itemcats_authorize_get_response>
+XML
+end
+#taobao.itemcats.get 获取后台供卖家发布商品的标准商品类目
+def taobao_itemcats_get_xml
+<<XML
+<itemcats_get_response>
+    <last_modified>2000-01-01 00:00:00</last_modified>
+    <item_cats list="true">
+        <item_cat>
+            <cid>50011999</cid>
+            <parent_cid>0</parent_cid>
+            <name>单方精油</name>
+            <is_parent>true</is_parent>
+            <status>normal</status>
+            <sort_order>1</sort_order>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+XML
+end
+#taobao.itemprops.get 获取标准商品类目属性
+def taobao_itemprops_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<itemprops_get_response>
+    <item_props list="true">
+        <item_prop>
+            <is_allow_alias>false</is_allow_alias>
+            <is_color_prop>false</is_color_prop>
+            <is_item_prop>false</is_item_prop>
+            <is_key_prop>true</is_key_prop>
+            <is_sale_prop>false</is_sale_prop>
+            <multi>false</multi>
+            <must>false</must>
+            <name>关键属性2</name>
+            <parent_pid>0</parent_pid>
+            <parent_vid>0</parent_vid>
+            <pid>21862</pid>
+            <sort_order>3</sort_order>
+            <status>normal</status>
+        </item_prop>
+    </item_props>
+</itemprops_get_response>
+<!--vm127.sqa-->
+XML
+end
+#taobao.itempropvalues.get 获取标准类目属性值
+def taobao_itempropvalues_get_xml
+<<XML
+<itempropvalues_get_response>
+    <last_modified>2000-01-01 00:00:00</last_modified>
+    <prop_values list="true">
+        <prop_value>
+            <cid>50010538</cid>
+            <pid>1627207</pid>
+            <prop_name>颜色</prop_name>
+            <vid>3232483</vid>
+            <name>军绿色</name>
+            <name_alias>军绿色</name_alias>
+            <is_parent>true</is_parent>
+            <status>normal</status>
+            <sort_order>0</sort_order>
+        </prop_value>
+    </prop_values>
+</itempropvalues_get_response>
 XML
 end

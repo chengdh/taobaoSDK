@@ -15,6 +15,9 @@ require "taobaoSDK/model/item_prop"
 require "taobaoSDK/model/prop_value"
 require "taobaoSDK/model/seller_authorize"
 require "taobaoSDK/model/itemcats_authorize_get_response"
+require "taobaoSDK/model/itemcats_get_response"
+require "taobaoSDK/model/itemprops_get_response"
+require "taobaoSDK/model/itempropvalues_get_response"
 
 module TaobaoSDK
 end

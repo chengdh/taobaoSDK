@@ -21,7 +21,29 @@ describe TaobaoSDK::Parser do
   it "should parse taobao.itemcats.authorize.get" do
     rsp = TaobaoSDK::Parser.process(taobao_itemcats_authorize_get_xml)
     rsp.seller_authorize.xinpin_item_cats.size.should eql(1)
+    rsp.seller_authorize.xinpin_item_cats.first.name.should eql("单方精油")
     rsp.seller_authorize.item_cats.size.should eql(1)
+    rsp.seller_authorize.item_cats.first.name.should eql("单方精油")
     rsp.seller_authorize.brands.size.should eql(1)
+    rsp.seller_authorize.brands.first.name.should eql("测试品牌")
+  end
+  #taobao.itemcats.get 获取后台供卖家发布商品的标准商品类目
+  it "should parse taobao.itemcats.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_itemcats_get_xml)
+    rsp.item_cats.size.should eql(1)
+    rsp.item_cats.first.name.should eql("单方精油")
+  end
+  #taobao.itemprops.get 获取标准商品类目属性
+  it "should parse taobao.itemprops.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_itemprops_get_xml)
+    rsp.item_props.size.should eql(1)
+    rsp.item_props.first.name.should eql("关键属性2")
+  end
+  #taobao.itempropvalues.get 获取标准类目属性值
+  it "should parse taoao.itempropvalues.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_itempropvalues_get_xml)
+    rsp.prop_values.size.should eql(1)
+    rsp.prop_values.first.name.should eql("军绿色")
+
   end
 end
