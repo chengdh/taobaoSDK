@@ -201,3 +201,261 @@ def taobao_itempropvalues_get_xml
 </itempropvalues_get_response>
 XML
 end
+#taobao.aftersale.get 查询用户售后服务模板
+def taobao_aftersale_get_xml
+<<XML
+<aftersale_get_response>
+    <after_sales list="true">
+        <after_sale>
+            <after_sale_id>1</after_sale_id>
+            <after_sale_name>售后服务模板1</after_sale_name>
+            <after_sale_path>bqerqre67</after_sale_path>
+        </after_sale>
+    </after_sales>
+</aftersale_get_response>
+XML
+end
+#taobao.item.add 添加一个商品
+def taobao_item_add_xml
+<<XML
+<item_add_response>
+    <item>
+        <iid>569a64fce2e98bce187bcbbb4a4d262a</iid>
+        <detail_url>http:</detail_url>
+        <num_iid>1489161932</num_iid>
+        <title>Google test item</title>
+        <nick>tbtest561</nick>
+        <type>fixed</type>
+        <cid>132443</cid>
+        <seller_cids>2234445,3344466,446434</seller_cids>
+        <props>135255:344454</props>
+        <input_pids>2432,5353,656425</input_pids>
+        <input_str>耐克;耐克系列;科比系列;科比系列;2K5</input_str>
+        <desc>这是一个好商品</desc>
+        <pic_url>http:</pic_url>
+        <num>8888</num>
+        <valid_thru>7</valid_thru>
+        <list_time>2009-10-22 14:22:06</list_time>
+        <delist_time>2000-01-01 00:00:00</delist_time>
+        <stuff_status>new</stuff_status>
+        <location>
+            <zip>
+                310000
+            </zip>
+            <address>
+                华星路99号创业大厦
+            </address>
+            <city>
+                杭州
+            </city>
+            <state>
+                浙江
+            </state>
+            <country>
+                中国
+            </country>
+            <district>
+                西湖区
+            </district>
+        </location>
+        <price>
+            5.00
+        </price>
+        <post_fee>
+            5.00
+        </post_fee>
+        <express_fee>
+            5.00
+        </express_fee>
+        <ems_fee>
+            5.00
+        </ems_fee>
+        <has_discount>
+            true
+        </has_discount>
+        <freight_payer>
+            seller
+        </freight_payer>
+        <has_invoice>
+            true
+        </has_invoice>
+        <has_warranty>
+            true
+        </has_warranty>
+        <has_showcase>
+            true
+        </has_showcase>
+        <modified>
+            2000-01-01 00:00:00
+        </modified>
+        <increment>
+            0
+        </increment>
+        <approve_status>
+            onsale
+        </approve_status>
+        <postage_id>
+            32
+        </postage_id>
+        <product_id>
+            85883030
+        </product_id>
+        <auction_point>
+            15
+        </auction_point>
+        <property_alias>
+            property
+        </property_alias>
+        <item_imgs>
+            <id>
+                1645920
+            </id>
+            <url>
+                http:
+            </url>
+            <position>
+                1
+            </position>
+            <created>
+                2000-01-01 00:00:00
+            </created>
+        </item_imgs>
+        <prop_imgs>
+            <id>
+                1646146
+            </id>
+            <url>
+                http:
+            </url>
+            <properties>
+                1627207:28326
+            </properties>
+            <position>
+                1
+            </position>
+            <created>
+                2000-01-01 00:00:00
+            </created>
+        </prop_imgs>
+        <skus>
+            <sku_id>
+                123
+            </sku_id>
+            <iid>
+                asdf12323adfaa
+            </iid>
+            <num_iid>
+                12345
+            </num_iid>
+            <properties>
+                1243:1215;5626:5125
+            </properties>
+            <quantity>
+                3
+            </quantity>
+            <price>
+                200.07
+            </price>
+            <outer_id>
+                12345
+            </outer_id>
+            <created>
+                2009-11-04 15:24:43
+            </created>
+            <modified>
+                2009-11-04 15:24:43
+            </modified>
+            <status>
+                normal
+            </status>
+        </skus>
+        <outer_id>
+            34143554352
+        </outer_id>
+        <is_virtual>
+            true
+        </is_virtual>
+        <is_taobao>
+            true
+        </is_taobao>
+        <is_ex>
+            true
+        </is_ex>
+        <is_timing>
+            true
+        </is_timing>
+        <videos>
+            <id>
+                123456
+            </id>
+            <video_id>
+                123456
+            </video_id>
+            <url>
+                http:
+            </url>
+            <created>
+                2000-01-01 00:00:00
+            </created>
+            <modified>
+                2000-01-01 00:00:00
+            </modified>
+            <iid>
+                94bccd061369cba108c2665445235154
+            </iid>
+            <num_iid>
+                1497217011
+            </num_iid>
+        </videos>
+        <is_3D>
+            true
+        </is_3D>
+        <score>
+            2
+        </score>
+        <volume>
+            22
+        </volume>
+        <one_station>
+            true
+        </one_station>
+        <second_kill>
+            web_only
+        </second_kill>
+        <auto_fill>
+            time_card
+        </auto_fill>
+        <props_name>
+            20000:3275069:品牌:盈讯;1753146:3485013:型号:F908;30606:112030:上市时间:2008年
+        </props_name>
+        <violation>
+            true
+        </violation>
+        <created>
+            2000-01-01 00:00:00
+        </created>
+        <is_prepay>
+            true
+        </is_prepay>
+        <ww_status>
+            true
+        </ww_status>
+        <promoted_service>
+            2
+        </promoted_service>
+        <wap_desc>
+            Wap宝贝详情
+        </wap_desc>
+        <wap_detail_url>
+            http:
+        </wap_detail_url>
+        <after_sale_id>
+            123
+        </after_sale_id>
+        <sell_promise>
+            true
+        </sell_promise>
+    </item>
+</item_add_response>
+XML
+end

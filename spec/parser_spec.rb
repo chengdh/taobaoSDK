@@ -44,6 +44,17 @@ describe TaobaoSDK::Parser do
     rsp = TaobaoSDK::Parser.process(taobao_itempropvalues_get_xml)
     rsp.prop_values.size.should eql(1)
     rsp.prop_values.first.name.should eql("军绿色")
+  end
+  #taobao.aftersale.get 查询用户售后服务模板
+  it "should parse taobao.aftersale.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_aftersale_get_xml)
+    rsp.after_sales.size.should eql(1)
+    rsp.after_sales.first.after_sale_name.should eql("售后服务模板1")
 
+  end
+  #taobao.item.add 添加一个商品
+  it "should parse taobao.item.add" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_add_xml)
+    rsp.item.should_not nil
   end
 end

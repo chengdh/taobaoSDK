@@ -18,6 +18,9 @@ require "taobaoSDK/model/itemcats_authorize_get_response"
 require "taobaoSDK/model/itemcats_get_response"
 require "taobaoSDK/model/itemprops_get_response"
 require "taobaoSDK/model/itempropvalues_get_response"
+require "taobaoSDK/model/after_sale"
+require "taobaoSDK/model/aftersale_get_response"
+require "taobaoSDK/model/item_add_response"
 
 module TaobaoSDK
 end
