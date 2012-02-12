@@ -61,4 +61,20 @@ describe TaobaoSDK::Parser do
     rsp.item.item_imgs.should_not nil
     rsp.item.prop_imgs.should_not nil
   end
+  #taobao.item.delete 删除单条商品
+  it "should parse taobao.item.delete" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_delete_xml)
+    rsp.item.should_not nil
+  end
+  #taobao.item.get 得到单个商品信息
+  it "should parse taobao.item.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_get_xml)
+    rsp.item.should_not nil
+  end
+  #taobao.item.img.delete 删除商品图片
+  it "should parse taobao.item.img.delete" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_img_delete_xml)
+    rsp.item_img.should_not nil
+
+  end
 end

@@ -459,3 +459,152 @@ def taobao_item_add_xml
 </item_add_response>
 XML
 end
+#taobao.item.delete 删除单条商品
+def taobao_item_delete_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<item_delete_response>
+    <item>
+        <created>
+            2010-05-11 10:07:43
+        </created>
+        <num_iid>
+            1489588028
+        </num_iid>
+    </item>
+</item_delete_response>
+<!--vx215015.sqa-->
+XML
+end
+#taobao.item.get 得到单个商品信息
+def taobao_item_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<item_get_response>
+    <item>
+        <approve_status>
+            instock
+        </approve_status>
+        <auction_point>
+            0
+        </auction_point>
+        <auto_repost>
+            true
+        </auto_repost>
+        <cid>
+            162103
+        </cid>
+        <delist_time>
+            2010-01-22 14:58:29
+        </delist_time>
+        <desc>
+            测试测试测试测试测试
+        </desc>
+        <ems_fee>
+            10.00
+        </ems_fee>
+        <express_fee>
+            5.00
+        </express_fee>
+        <freight_payer>
+            buyer
+        </freight_payer>
+        <has_discount>
+            true
+        </has_discount>
+        <has_invoice>
+            false
+        </has_invoice>
+        <has_showcase>
+            false
+        </has_showcase>
+        <has_warranty>
+            false
+        </has_warranty>
+        <increment>
+            0.00
+        </increment>
+        <input_pids>
+        </input_pids>
+        <input_str>
+        </input_str>
+        <is_ex>
+            false
+        </is_ex>
+        <is_taobao>
+            true
+        </is_taobao>
+        <list_time>
+            2010-01-08 14:58:29
+        </list_time>
+        <location>
+            <city>
+                杭州
+            </city>
+            <state>
+                浙江
+            </state>
+        </location>
+        <modified>
+            2009-12-25 15:00:11
+        </modified>
+        <nick>
+            tbtest1064
+        </nick>
+        <num>
+            100
+        </num>
+        <num_iid>
+            1489209928
+        </num_iid>
+        <post_fee>
+            10.00
+        </post_fee>
+        <postage_id>
+            0
+        </postage_id>
+        <price>
+            2.00
+        </price>
+        <product_id>
+            81078980
+        </product_id>
+        <property_alias>
+        </property_alias>
+        <props>
+            31609:103422;20672:3216779;20673:29541;20000:29459;1625891:3216783
+        </props>
+        <stuff_status>
+            new
+        </stuff_status>
+        <title>
+            测试数据
+        </title>
+        <type>
+            fixed
+        </type>
+        <valid_thru>
+            14
+        </valid_thru>
+    </item>
+</item_get_response>
+<!--vx215015.sqa-->
+XML
+end
+#taobao.item.img.delete 删除商品图片
+def taobao_item_img_delete_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<item_img_delete_response>
+    <item_img>
+        <created>
+            2010-05-11 12:00:10
+        </created>
+        <id>
+            1763127
+        </id>
+    </item_img>
+</item_img_delete_response>
+<!--vm127.sqa-->
+XML
+end

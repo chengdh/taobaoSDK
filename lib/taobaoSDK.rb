@@ -26,6 +26,9 @@ require "taobaoSDK/model/prop_img"
 require "taobaoSDK/model/video"
 require "taobaoSDK/model/item"
 require "taobaoSDK/model/item_add_response"
+require "taobaoSDK/model/item_delete_response"
+require "taobaoSDK/model/item_get_response"
+require "taobaoSDK/model/item_img_delete_response"
 
 module TaobaoSDK
 end
