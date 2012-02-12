@@ -56,5 +56,9 @@ describe TaobaoSDK::Parser do
   it "should parse taobao.item.add" do
     rsp = TaobaoSDK::Parser.process(taobao_item_add_xml)
     rsp.item.should_not nil
+    rsp.item.skus.should_not nil
+    rsp.item.location.should_not nil
+    rsp.item.item_imgs.should_not nil
+    rsp.item.prop_imgs.should_not nil
   end
 end

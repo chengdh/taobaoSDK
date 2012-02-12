@@ -20,6 +20,11 @@ require "taobaoSDK/model/itemprops_get_response"
 require "taobaoSDK/model/itempropvalues_get_response"
 require "taobaoSDK/model/after_sale"
 require "taobaoSDK/model/aftersale_get_response"
+require "taobaoSDK/model/sku"
+require "taobaoSDK/model/item_img"
+require "taobaoSDK/model/prop_img"
+require "taobaoSDK/model/video"
+require "taobaoSDK/model/item"
 require "taobaoSDK/model/item_add_response"
 
 module TaobaoSDK
