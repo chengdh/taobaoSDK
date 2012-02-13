@@ -9,7 +9,7 @@ describe TaobaoSDK::Parser do
     rsp.user.seller_credit.level.should eql(1)
     rsp.user.location.zip.should eql('310000')
   end
-  it "should parse taobao.users.get" do
+  it "should parse taobao.users.get xml success" do
     rsp = TaobaoSDK::Parser.process(taobao_users_get_xml)
     rsp.users.size.should eql(1)
     rsp.users.first.nick.should eql('程东辉')
