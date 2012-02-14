@@ -96,4 +96,59 @@ describe TaobaoSDK::Parser do
     rsp = TaobaoSDK::Parser.process(taobao_item_price_update_xml)
     rsp.item.should_not nil
   end
+  #taobao.item.propimg.delete 删除属性图片
+  it "should parse taobao.item.propimg.delete" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_propimg_delete_xml)
+    rsp.prop_img.should_not nil
+  end
+  #taobao.item.propimg.upload 添加或修改属性图片
+  it "should parse taobao.item.propimg.upload" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_propimg_upload_xml)
+    rsp.prop_img.should_not nil
+  end
+  #taobao.item.quantity.update 宝贝/SKU库存修改
+  it "should parse taobao.item.quantity.update" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_quantity_update_xml)
+    rsp.item.should_not nil
+  end
+  #taobao.item.recommend.add 橱窗推荐一个商品
+  it "should parse taobao.item.recommend.add" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_recommend_add_xml)
+    rsp.item.should_not nil
+  end
+  #taobao.item.recommend.delete 取消橱窗推荐一个商品
+  it "should parse taobao.item.recommend.delete" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_recommend_delete_xml)
+    rsp.item.should_not nil
+  end
+  #taobao.item.sku.add 添加SKU
+  it "should parse taobao.item.sku.add" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_sku_add_xml)
+    rsp.sku.should_not nil
+  end
+  #taobao.item.sku.delete 删除SKU
+  it "should parse taobao.item.sku.delete" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_sku_delete_xml)
+    rsp.sku.should_not nil
+  end
+  #taobao.item.sku.get 获取SKU
+  it "should parse taobao.item.sku.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_sku_get_xml)
+    rsp.sku.should_not nil
+  end
+  #taobao.item.sku.update  更新SKU
+  it "should parse taobao.item.sku.update" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_sku_update_xml)
+    rsp.sku.should_not nil
+  end
+  #taobao.item.sku.price.update 更新商品SKU的价格
+  it "should parse taobao.item.sku.price.update" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_sku_price_update_xml)
+    rsp.sku.should_not nil
+  end
+  #taobao.item.templates.get 获取用户宝贝详情页模板名称
+  it "should parse taobao.item.templates.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_templates_get_xml)
+    rsp.item_templates.size.should eql(1)
+  end
 end

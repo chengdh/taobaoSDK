@@ -8,7 +8,7 @@ module TaobaoSDK
     text_node :nick,"nick",:default_value => nil
     text_node :type,"type",:default_value => nil
     text_node :desc,"desc",:default_value => nil
-    array_node :skus,"skus","sku",:default_value => []
+    array_node :skus,"skus","sku",:class => Sku,:default_value => []
     text_node :props_name,"props_name",:default_value => nil
     text_node :created,"created",:default_value => nil
     text_node :promoted_service,"promoted_service",:default_value => nil
@@ -47,14 +47,14 @@ module TaobaoSDK
     text_node :approve_status,"approve_status",:default_value => nil
     numeric_node :postage_id,"postage_id",:default_value => nil
     numeric_node :product_id,"product_id",:default_value => nil
-    array_node :item_imgs,"item_imgs","item_img",:default_value => []
-    array_node :prop_imgs,"prop_imgs","prop_img",:default_value => []
+    array_node :item_imgs,"item_imgs","item_img",:class => ItemImg,:default_value => []
+    array_node :prop_imgs,"prop_imgs","prop_img",:class => PropImg,:default_value => []
     text_node :outer_id,"outer_id",:default_value => nil
     boolean_node :is_virtual,"is_virtual","true","false",:default_value => false
     boolean_node :is_taobao,"is_taobao","true","false",:default_value => false
     boolean_node :is_ex,"is_ex","true","false",:default_value => false
     boolean_node :is_timing,"is_timing","true","false",:default_value => false
-    array_node :videos,"videos","video",:default_value => []
+    array_node :videos,"videos","video",:class => Video,:default_value => []
     boolean_node :is_3D,"is_3D","true","false",:default_value => false
     numeric_node :score,"score",:default_value => 0
     boolean_node :one_station,"one_station","true","false",:default_value => false
