@@ -29,6 +29,10 @@ require "taobaoSDK/model/item_add_response"
 require "taobaoSDK/model/item_delete_response"
 require "taobaoSDK/model/item_get_response"
 require "taobaoSDK/model/item_img_delete_response"
+require "taobaoSDK/model/item_img_upload_response"
+require "taobaoSDK/model/item_joint_img_response"
+require "taobaoSDK/model/item_joint_propimg_response"
+require "taobaoSDK/model/item_price_update_response"
 
 module TaobaoSDK
 end

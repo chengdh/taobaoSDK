@@ -75,6 +75,25 @@ describe TaobaoSDK::Parser do
   it "should parse taobao.item.img.delete" do
     rsp = TaobaoSDK::Parser.process(taobao_item_img_delete_xml)
     rsp.item_img.should_not nil
-
+  end
+  #taobao.item.img.upload 添加商品图片
+  it "should parse taobao.item.img.upload" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_img_upload_xml)
+    rsp.item_img.should_not nil
+  end
+  #taobao.item.joint.img 商品关联子图
+  it "should parse taobao.item.joint.img" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_joint_img_xml)
+    rsp.item_img.should_not nil
+  end
+  #taobao.item.joint.propimg 商品关联属性图
+  it "should parse taobao.item.joint.propimg" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_joint_propimg_xml)
+    rsp.prop_img.should_not nil
+  end
+  #taobao.item.price.update 更新商品价格
+  it "should parse taobao.item.price.update" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_price_update_xml)
+    rsp.item.should_not nil
   end
 end

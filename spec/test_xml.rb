@@ -608,3 +608,76 @@ def taobao_item_img_delete_xml
 <!--vm127.sqa-->
 XML
 end
+#taobao.item.img.upload 添加商品图片
+def taobao_item_img_upload_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<item_img_upload_response>
+    <item_img>
+        <created>
+            2010-05-11 11:58:58
+        </created>
+        <id>
+            1763105
+        </id>
+        <url>
+            http://www.abc.com/a.jpg
+	</url>
+    </item_img>
+</item_img_upload_response>
+XML
+end
+#taobao.item.joint.img 商品关联子图
+def taobao_item_joint_img_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<item_joint_img_response>
+    <item_img>
+        <created>
+            2010-05-11 11:58:58
+        </created>
+        <id>
+            1763105
+        </id>
+        <url>
+            http://www.abc.com/a.jpg
+	</url>
+    </item_img>
+</item_joint_img_response>
+XML
+end
+#taobao.item.joint.propimg 商品关联属性图
+def taobao_item_joint_propimg_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<item_joint_propimg_response>
+    <prop_img>
+        <created>
+            2010-05-11 11:58:58
+        </created>
+        <id>
+            1763105
+        </id>
+        <url>
+            http://www.abc.com/a.jpg
+	</url>
+    </prop_img>
+</item_joint_propimg_response>
+XML
+end
+#taobao.item.price.update 更新商品价格
+def taobao_item_price_update_xml
+<<XML
+<item_price_update_response>
+    <item>
+        <price>
+            5.00
+        </price>
+        <num_iid>
+            1489161932
+        </num_iid>
+    </item>
+</item_price_update_response>
+XML
+end
+
