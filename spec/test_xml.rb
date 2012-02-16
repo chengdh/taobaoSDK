@@ -1154,3 +1154,1183 @@ def taobao_item_templates_get_xml
 </item_templates_get_response>
 XML
 end
+#taobao.item.update 更新商品信息
+def taobao_item_update_xml
+<<XML
+<item_update_response>
+    <item>
+        <detail_url>
+            http:
+        </detail_url>
+        <num_iid>
+            1489161932
+        </num_iid>
+        <title>
+            Google test item
+        </title>
+        <nick>
+            tbtest561
+        </nick>
+        <type>
+            fixed
+        </type>
+        <cid>
+            132443
+        </cid>
+        <seller_cids>
+            2234445,3344466,446434
+        </seller_cids>
+        <props>
+            135255:344454
+        </props>
+        <input_pids>
+            2432,5353,656425
+        </input_pids>
+        <input_str>
+            耐克;耐克系列;科比系列;科比系列;2K5
+        </input_str>
+        <desc>
+            这是一个好商品
+        </desc>
+        <pic_url>
+            http:
+        </pic_url>
+        <num>
+            8888
+        </num>
+        <valid_thru>
+            7
+        </valid_thru>
+        <list_time>
+            2009-10-22 14:22:06
+        </list_time>
+        <delist_time>
+            2000-01-01 00:00:00
+        </delist_time>
+        <stuff_status>
+            new
+        </stuff_status>
+        <location>
+            <zip>
+                310000
+            </zip>
+            <address>
+                华星路99号创业大厦
+            </address>
+            <city>
+                杭州
+            </city>
+            <state>
+                浙江
+            </state>
+            <country>
+                中国
+            </country>
+            <district>
+                西湖区
+            </district>
+        </location>
+        <price>
+            5.00
+        </price>
+        <post_fee>
+            5.00
+        </post_fee>
+        <express_fee>
+            5.00
+        </express_fee>
+        <ems_fee>
+            5.00
+        </ems_fee>
+        <has_discount>
+            true
+        </has_discount>
+        <freight_payer>
+            seller
+        </freight_payer>
+        <has_invoice>
+            true
+        </has_invoice>
+        <has_warranty>
+            true
+        </has_warranty>
+        <has_showcase>
+            true
+        </has_showcase>
+        <modified>
+            2000-01-01 00:00:00
+        </modified>
+        <increment>
+            0
+        </increment>
+        <approve_status>
+            onsale
+        </approve_status>
+        <postage_id>
+            32
+        </postage_id>
+        <product_id>
+            85883030
+        </product_id>
+        <auction_point>
+            15
+        </auction_point>
+        <property_alias>
+            property
+        </property_alias>
+        <item_imgs>
+            <id>
+                1645920
+            </id>
+            <url>
+                http:
+            </url>
+            <position>
+                1
+            </position>
+            <created>
+                2000-01-01 00:00:00
+            </created>
+        </item_imgs>
+        <prop_imgs>
+            <id>
+                1646146
+            </id>
+            <url>
+                http:
+            </url>
+            <properties>
+                1627207:28326
+            </properties>
+            <position>
+                1
+            </position>
+            <created>
+                2000-01-01 00:00:00
+            </created>
+        </prop_imgs>
+        <skus>
+            <sku_id>
+                123
+            </sku_id>
+            <iid>
+                asdf12323adfaa
+            </iid>
+            <num_iid>
+                12345
+            </num_iid>
+            <properties>
+                1243:1215;5626:5125
+            </properties>
+            <quantity>
+                3
+            </quantity>
+            <price>
+                200.07
+            </price>
+            <outer_id>
+                12345
+            </outer_id>
+            <created>
+                2009-11-04 15:24:43
+            </created>
+            <modified>
+                2009-11-04 15:24:43
+            </modified>
+            <status>
+                normal
+            </status>
+        </skus>
+        <outer_id>
+            34143554352
+        </outer_id>
+        <is_virtual>
+            true
+        </is_virtual>
+        <is_taobao>
+            true
+        </is_taobao>
+        <is_ex>
+            true
+        </is_ex>
+        <is_timing>
+            true
+        </is_timing>
+        <videos>
+            <id>
+                123456
+            </id>
+            <video_id>
+                123456
+            </video_id>
+            <url>
+                http:
+            </url>
+            <created>
+                2000-01-01 00:00:00
+            </created>
+            <modified>
+                2000-01-01 00:00:00
+            </modified>
+            <iid>
+                94bccd061369cba108c2665445235154
+            </iid>
+            <num_iid>
+                1497217011
+            </num_iid>
+        </videos>
+        <is_3D>
+            true
+        </is_3D>
+        <score>
+            2
+        </score>
+        <volume>
+            22
+        </volume>
+        <one_station>
+            true
+        </one_station>
+        <second_kill>
+            web_only
+        </second_kill>
+        <auto_fill>
+            time_card
+        </auto_fill>
+        <props_name>
+            20000:3275069:品牌:盈讯;1753146:3485013:型号:F908;30606:112030:上市时间:2008年
+        </props_name>
+        <violation>
+            true
+        </violation>
+        <created>
+            2000-01-01 00:00:00
+        </created>
+        <is_prepay>
+            true
+        </is_prepay>
+        <ww_status>
+            true
+        </ww_status>
+        <promoted_service>
+            2
+        </promoted_service>
+        <wap_desc>
+            Wap宝贝详情
+        </wap_desc>
+        <wap_detail_url>
+            http:
+        </wap_detail_url>
+        <after_sale_id>
+            123
+        </after_sale_id>
+        <sell_promise>
+            true
+        </sell_promise>
+    </item>
+</item_update_response>
+XML
+end
+#taobao.item.update.delisting 商品下架
+def taobao_item_update_delisting_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<item_update_delisting_response>
+    <item>
+        <num_iid>
+            1489161932
+        </num_iid>
+        <modified>
+            2010-05-11 10:07:06
+        </modified>
+    </item>
+</item_update_delisting_response>
+<!--vx215015.sqa-->
+XML
+end
+#taobao.item.update.listing 一口价商品上架
+def taobao_item_update_listing_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<item_update_delisting_response>
+    <item>
+        <num_iid>
+            1489161932
+        </num_iid>
+        <modified>
+            2010-05-11 10:07:06
+        </modified>
+    </item>
+</item_update_delisting_response>
+<!--vx215015.sqa-->
+XML
+end
+#taobao.items.custom.get 根据外部ID取商品
+def taobao_items_custom_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<items_custom_get_response>
+    <items list="true">
+        <item>
+            <outer_id>
+                1273550580436
+            </outer_id>
+        </item>
+    </items>
+</items_custom_get_response>
+<!--vm127.sqa-->
+XML
+end
+#taobao.items.get 搜索商品信息
+def taobao_items_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<items_get_response>
+    <items list="true">
+        <item>
+            <iid>
+                a77d89756c91413df8a8f0aab0785be1
+            </iid>
+            <nick>
+                tbtest649
+            </nick>
+        </item>
+        <item>
+            <iid>
+                cc0dcf2eb954598b6eee101959b9b32a
+            </iid>
+            <nick>
+                czhendong001
+            </nick>
+        </item>
+        <item>
+            <iid>
+                85e5e5320efb4b5b8de15cc251deb292
+            </iid>
+            <nick>
+                tbtest81
+            </nick>
+        </item>
+    </items>
+    <total_results>
+        3
+    </total_results>
+</items_get_response>
+<!--vm127.sqa-->
+XML
+end
+#taobao.items.inventory.get 得到当前会话用户库存中的商品列表
+def taobao_items_inventory_get_xml
+<<XML
+<items_inventory_get_response>
+    <items list="true">
+        <item>
+            <approve_status>
+                instock
+            </approve_status>
+            <cid>
+                50009579
+            </cid>
+            <delist_time>
+                2010-07-28 16:55:04
+            </delist_time>
+            <has_discount>
+                false
+            </has_discount>
+            <has_invoice>
+                false
+            </has_invoice>
+            <has_showcase>
+                false
+            </has_showcase>
+            <has_warranty>
+                false
+            </has_warranty>
+            <iid>
+                ad4df439cf256b8cc2c629eb565bcc2b
+            </iid>
+            <list_time>
+                2010-07-21 16:55:04
+            </list_time>
+            <modified>
+                2010-07-28 16:55:04
+            </modified>
+            <nick>
+                xiaoyu_5141
+            </nick>
+            <num>
+                6
+            </num>
+            <num_iid>
+                6090828872
+            </num_iid>
+            <outer_id>
+            </outer_id>
+            <postage_id>
+                0
+            </postage_id>
+            <price>
+                12.00
+            </price>
+            <props>
+                1627207:28335;1627207:90554
+            </props>
+            <seller_cids>
+                -1
+            </seller_cids>
+            <title>
+                sdfasdf
+            </title>
+            <type>
+                fixed
+            </type>
+            <valid_thru>
+                7
+            </valid_thru>
+        </item>
+    </items>
+    <total_results>
+        1
+    </total_results>
+</items_inventory_get_response>
+XML
+end
+#taobao.items.list.get 得到当前会话用户库存中的商品列表
+def taobao_items_list_get_xml
+<<XML
+<items_list_get_response>
+    <items list="true">
+        <item>
+            <approve_status>
+                instock
+            </approve_status>
+            <cid>
+                50009579
+            </cid>
+            <delist_time>
+                2010-07-28 16:55:04
+            </delist_time>
+            <has_discount>
+                false
+            </has_discount>
+            <has_invoice>
+                false
+            </has_invoice>
+            <has_showcase>
+                false
+            </has_showcase>
+            <has_warranty>
+                false
+            </has_warranty>
+            <iid>
+                ad4df439cf256b8cc2c629eb565bcc2b
+            </iid>
+            <list_time>
+                2010-07-21 16:55:04
+            </list_time>
+            <modified>
+                2010-07-28 16:55:04
+            </modified>
+            <nick>
+                xiaoyu_5141
+            </nick>
+            <num>
+                6
+            </num>
+            <num_iid>
+                6090828872
+            </num_iid>
+            <outer_id>
+            </outer_id>
+            <postage_id>
+                0
+            </postage_id>
+            <price>
+                12.00
+            </price>
+            <props>
+                1627207:28335;1627207:90554
+            </props>
+            <seller_cids>
+                -1
+            </seller_cids>
+            <title>
+                sdfasdf
+            </title>
+            <type>
+                fixed
+            </type>
+            <valid_thru>
+                7
+            </valid_thru>
+        </item>
+    </items>
+    <total_results>
+        1
+    </total_results>
+</items_list_get_response>
+XML
+end
+#taobao.items.onsale.get 得到当前会话用户库存中的商品列表
+def taobao_items_onsale_get_xml
+<<XML
+<items_onsale_get_response>
+    <items list="true">
+        <item>
+            <approve_status>
+                instock
+            </approve_status>
+            <cid>
+                50009579
+            </cid>
+            <delist_time>
+                2010-07-28 16:55:04
+            </delist_time>
+            <has_discount>
+                false
+            </has_discount>
+            <has_invoice>
+                false
+            </has_invoice>
+            <has_showcase>
+                false
+            </has_showcase>
+            <has_warranty>
+                false
+            </has_warranty>
+            <iid>
+                ad4df439cf256b8cc2c629eb565bcc2b
+            </iid>
+            <list_time>
+                2010-07-21 16:55:04
+            </list_time>
+            <modified>
+                2010-07-28 16:55:04
+            </modified>
+            <nick>
+                xiaoyu_5141
+            </nick>
+            <num>
+                6
+            </num>
+            <num_iid>
+                6090828872
+            </num_iid>
+            <outer_id>
+            </outer_id>
+            <postage_id>
+                0
+            </postage_id>
+            <price>
+                12.00
+            </price>
+            <props>
+                1627207:28335;1627207:90554
+            </props>
+            <seller_cids>
+                -1
+            </seller_cids>
+            <title>
+                sdfasdf
+            </title>
+            <type>
+                fixed
+            </type>
+            <valid_thru>
+                7
+            </valid_thru>
+        </item>
+    </items>
+    <total_results>
+        1
+    </total_results>
+</items_onsale_get_response>
+XML
+end
+#taobao.items.search 搜索商品信息
+def taobao_items_search_xml
+<<XML
+<items_search_response>
+    <item_searchs list="true">
+        <item_search>
+            <items list="true">
+                <item>
+                    <iid>
+                        569a64fce2e98bce187bcbbb4a4d262a
+                    </iid>
+                    <num_iid>
+                        1489161932
+                    </num_iid>
+                    <title>
+                        Google test item
+                    </title>
+                    <nick>
+                        tbtest561
+                    </nick>
+                    <type>
+                        fixed
+                    </type>
+                    <cid>
+                        132443
+                    </cid>
+                    <seller_cids>
+                        2234445,3344466,446434
+                    </seller_cids>
+                    <props>
+                        135255:344454
+                    </props>
+                    <input_pids>
+                        2432,5353,656425
+                    </input_pids>
+                    <input_str>
+                        耐克;耐克系列;科比系列;科比系列;2K5
+                    </input_str>
+                    <desc>
+                        这是一个好商品
+                    </desc>
+                    <pic_url>
+                        http:
+                    </pic_url>
+                    <num>
+                        8888
+                    </num>
+                    <valid_thru>
+                        7
+                    </valid_thru>
+                    <list_time>
+                        2009-10-22 14:22:06
+                    </list_time>
+                    <delist_time>
+                        2000-01-01 00:00:00
+                    </delist_time>
+                    <stuff_status>
+                        new
+                    </stuff_status>
+                    <location>
+                        <zip>
+                            310000
+                        </zip>
+                        <address>
+                            华星路99号创业大厦
+                        </address>
+                        <city>
+                            杭州
+                        </city>
+                        <state>
+                            浙江
+                        </state>
+                        <country>
+                            中国
+                        </country>
+                        <district>
+                            西湖区
+                        </district>
+                    </location>
+                    <price>
+                        5.00
+                    </price>
+                    <post_fee>
+                        5.00
+                    </post_fee>
+                    <express_fee>
+                        5.00
+                    </express_fee>
+                    <ems_fee>
+                        5.00
+                    </ems_fee>
+                    <has_discount>
+                        true
+                    </has_discount>
+                    <freight_payer>
+                        seller
+                    </freight_payer>
+                    <has_invoice>
+                        true
+                    </has_invoice>
+                    <has_warranty>
+                        true
+                    </has_warranty>
+                    <has_showcase>
+                        true
+                    </has_showcase>
+                    <modified>
+                        2000-01-01 00:00:00
+                    </modified>
+                    <increment>
+                        0
+                    </increment>
+                    <auto_repost>
+                        true
+                    </auto_repost>
+                    <approve_status>
+                        onsale
+                    </approve_status>
+                    <postage_id>
+                        32
+                    </postage_id>
+                    <product_id>
+                        85883030
+                    </product_id>
+                    <auction_point>
+                        15
+                    </auction_point>
+                    <property_alias>
+                        property
+                    </property_alias>
+                    <item_imgs list="true">
+                        <item_img>
+                            <id>
+                                1645920
+                            </id>
+                            <url>
+                                http:
+                            </url>
+                            <position>
+                                1
+                            </position>
+                            <created>
+                                2000-01-01 00:00:00
+                            </created>
+                        </item_img>
+                    </item_imgs>
+                    <prop_imgs list="true">
+                        <prop_img>
+                            <id>
+                                1646146
+                            </id>
+                            <url>
+                                http:
+                            </url>
+                            <properties>
+                                1627207:28326
+                            </properties>
+                            <position>
+                                1
+                            </position>
+                            <created>
+                                2000-01-01 00:00:00
+                            </created>
+                        </prop_img>
+                    </prop_imgs>
+                    <skus list="true">
+                        <sku>
+                            <sku_id>
+                                123
+                            </sku_id>
+                            <iid>
+                                asdf12323adfaa
+                            </iid>
+                            <num_iid>
+                                12345
+                            </num_iid>
+                            <properties>
+                                1243:1215;5626:5125
+                            </properties>
+                            <quantity>
+                                3
+                            </quantity>
+                            <price>
+                                200.07
+                            </price>
+                            <outer_id>
+                                12345
+                            </outer_id>
+                            <created>
+                                2009-11-04 15:24:43
+                            </created>
+                            <modified>
+                                2009-11-04 15:24:43
+                            </modified>
+                            <status>
+                                normal
+                            </status>
+                        </sku>
+                    </skus>
+                    <outer_id>
+                        34143554352
+                    </outer_id>
+                    <is_virtual>
+                        true
+                    </is_virtual>
+                    <is_taobao>
+                        true
+                    </is_taobao>
+                    <is_ex>
+                        true
+                    </is_ex>
+                    <is_timing>
+                        true
+                    </is_timing>
+                    <videos list="true">
+                        <video>
+                            <id>
+                                123456
+                            </id>
+                            <video_id>
+                                123456
+                            </video_id>
+                            <url>
+                                http:
+                            </url>
+                            <created>
+                                2000-01-01 00:00:00
+                            </created>
+                            <modified>
+                                2000-01-01 00:00:00
+                            </modified>
+                            <iid>
+                                94bccd061369cba108c2665445235154
+                            </iid>
+                            <num_iid>
+                                1497217011
+                            </num_iid>
+                        </video>
+                    </videos>
+                    <is_3D>
+                        true
+                    </is_3D>
+                    <score>
+                        2
+                    </score>
+                    <volume>
+                        22
+                    </volume>
+                    <one_station>
+                        true
+                    </one_station>
+                    <second_kill>
+                        web_only
+                    </second_kill>
+                    <auto_fill>
+                        time_card
+                    </auto_fill>
+                </item>
+            </items>
+            <item_categories list="true">
+                <item_categorie>
+                    <category_id>
+                        2132342
+                    </category_id>
+                    <count>
+                        100
+                    </count>
+                </item_categorie>
+            </item_categories>
+        </item_search>
+    </item_searchs>
+    <total_results>
+        1
+    </total_results>
+</items_search_response>
+XML
+end
+#taobao.product.add 上传一个产品，不包括产品非主图和属性图片
+def taobao_product_add_xml
+<<XML
+<product_add_response>
+    <product>
+        <product_id>
+            3433222
+        </product_id>
+        <created>
+            2000-01-01 00:00:00
+        </created>
+    </product>
+</product_add_response>
+XML
+end
+#taobao.product.get 获取一个产品的信息
+def taobao_product_get_xml
+<<XML
+<product_get_response>
+    <product>
+        <product_id>
+            3433222
+        </product_id>
+        <outer_id>
+            123456
+        </outer_id>
+        <created>
+            2000-01-01 00:00:00
+        </created>
+    </product>
+</product_get_response>
+XML
+end
+#taobao.product.update 修改一个产品，可以修改主图，不能修改子图片
+def taobao_product_update_xml
+<<XML
+<product_update_response>
+    <product>
+        <product_id>
+            3433222
+        </product_id>
+        <outer_id>
+            123456
+        </outer_id>
+        <created>
+            2000-01-01 00:00:00
+        </created>
+    </product>
+</product_update_response>
+XML
+end
+#taobao.products.get 获取产品列表
+def taobao_products_get_xml
+<<XML
+<products_get_response>
+    <products list="true">
+        <product>
+            <product_id>
+                3433222
+            </product_id>
+            <outer_id>
+                123456
+            </outer_id>
+            <created>
+                2000-01-01 00:00:00
+            </created>
+        </product>
+    </products>
+</products_get_response>
+XML
+end
+#taobao.products.search 搜索产品信息
+def taobao_products_search_xml
+<<XML
+<products_search_response>
+    <products list="true">
+        <product>
+            <product_id>
+                3433222
+            </product_id>
+            <outer_id>
+                123456
+            </outer_id>
+            <created>
+                2000-01-01 00:00:00
+            </created>
+        </product>
+    </products>
+    <total_results>
+        50
+    </total_results>
+</products_search_response>
+XML
+end
+#taobao.product.img.delete 删除产品非主图
+def taobao_product_img_delete_xml
+<<XML
+<product_img_delete_response>
+    <product_img>
+        <id>
+            9684
+        </id>
+        <product_id>
+            96899
+        </product_id>
+    </product_img>
+</product_img_delete_response>
+XML
+end
+#taobao.product.img.upload 删除产品非主图
+def taobao_product_img_upload_xml
+<<XML
+<product_img_upload_response>
+    <product_img>
+        <id>
+            9684
+        </id>
+        <product_id>
+            96899
+        </product_id>
+    </product_img>
+</product_img_upload_response>
+XML
+end
+#taobao.product.propimg.delete 删除产品属性图
+def taobao_product_propimg_delete_xml
+<<XML
+<product_propimg_delete_response>
+    <product_prop_img>
+        <id>
+            674443
+        </id>
+        <product_id>
+            96899
+        </product_id>
+    </product_prop_img>
+</product_propimg_delete_response>
+XML
+end
+#taobao.product.propimg.upload
+def taobao_product_propimg_upload_xml
+<<XML
+<product_propimg_upload_response>
+    <product_prop_img>
+        <id>
+            674443
+        </id>
+        <product_id>
+            96899
+        </product_id>
+    </product_prop_img>
+</product_propimg_upload_response>
+XML
+end
+#taobao.skus.custom.get 根据外部ID取商品SKU
+def taobao_skus_custom_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<skus_custom_get_response>
+    <skus list="true">
+        <sku>
+            <created>
+                2009-12-08 18:05:25
+            </created>
+            <iid>
+                1491702279
+            </iid>
+            <modified>
+                2009-12-08 18:05:25
+            </modified>
+            <outer_id>
+                magic
+            </outer_id>
+            <price>
+                1000.00
+            </price>
+            <properties>
+                1627207:3232481;1630696:3266781
+            </properties>
+            <quantity>
+                3
+            </quantity>
+            <sku_id>
+                83277450
+            </sku_id>
+            <status>
+                normal
+            </status>
+        </sku>
+        <sku>
+            <created>
+                2009-12-08 18:05:25
+            </created>
+            <iid>
+                1491702279
+            </iid>
+            <modified>
+                2009-12-08 18:05:25
+            </modified>
+            <outer_id>
+                magic
+            </outer_id>
+            <price>
+                1200.00
+            </price>
+            <properties>
+                1627207:3232482;1630696:3266781
+            </properties>
+            <quantity>
+                5
+            </quantity>
+            <sku_id>
+                83277454
+            </sku_id>
+            <status>
+                normal
+            </status>
+        </sku>
+        <sku>
+            <created>
+                2009-12-08 18:05:25
+            </created>
+            <iid>
+                1491702277
+            </iid>
+            <modified>
+                2009-12-08 18:05:25
+            </modified>
+            <outer_id>
+                magic
+            </outer_id>
+            <price>
+                1000.00
+            </price>
+            <properties>
+                1627207:3232481;1630696:3266781
+            </properties>
+            <quantity>
+                3
+            </quantity>
+            <sku_id>
+                83277452
+            </sku_id>
+            <status>
+                normal
+            </status>
+        </sku>
+        <sku>
+            <created>
+                2010-05-11 11:57:14
+            </created>
+            <iid>
+                1497927693
+            </iid>
+            <modified>
+                2010-05-11 11:57:14
+            </modified>
+            <outer_id>
+                magic
+            </outer_id>
+            <price>
+                1200.00
+            </price>
+            <properties>
+                1627207:3232482;1630696:3266781
+            </properties>
+            <quantity>
+                5
+            </quantity>
+            <sku_id>
+                86172350
+            </sku_id>
+            <status>
+                normal
+            </status>
+        </sku>
+        <sku>
+            <created>
+                2010-05-11 11:57:14
+            </created>
+            <iid>
+                1497927693
+            </iid>
+            <modified>
+                2010-05-11 11:57:14
+            </modified>
+            <outer_id>
+                magic
+            </outer_id>
+            <price>
+                1000.00
+            </price>
+            <properties>
+                1627207:28320;1630696:3266781
+            </properties>
+            <quantity>
+                3
+            </quantity>
+            <sku_id>
+                86172348
+            </sku_id>
+            <status>
+                normal
+            </status>
+        </sku>
+    </skus>
+</skus_custom_get_response>
+<!--vm127.sqa-->
+XML
+end

@@ -2,7 +2,7 @@
 module TaobaoSDK
   class Item
     include XML::Mapping
-    numeric_node :num_iid,"num_iid"
+    numeric_node :num_iid,"num_iid",:default_value => nil
     text_node :detail_url,"detail_url",:default_value => nil
     text_node :title,"title",:default_value => nil
     text_node :nick,"nick",:default_value => nil

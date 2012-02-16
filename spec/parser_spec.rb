@@ -151,4 +151,107 @@ describe TaobaoSDK::Parser do
     rsp = TaobaoSDK::Parser.process(taobao_item_templates_get_xml)
     rsp.item_templates.size.should eql(1)
   end
+  #taobao.item.update 更新用户宝贝信息
+  it "should parse taobao.item.update" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_update_xml)
+    rsp.item.should_not nil
+  end
+  #taobao.item.update.delisting 商品下架
+  it "should parse taobao.item.update.delisting" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_update_delisting_xml)
+    rsp.item.should_not nil
+
+  end
+  #taobao.item.update.listing 一口价商品上架
+  it "should parse taobao.item.update.listing" do
+    rsp = TaobaoSDK::Parser.process(taobao_item_update_listing_xml)
+    rsp.item.should_not nil
+  end
+  #taobao.items.custom.get 根据外部ID取商品
+  it "should parse taobao.items.custom.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_items_custom_get_xml)
+    rsp.items.should_not nil
+  end
+  #taobao.items.get 搜索商品信息
+  it "should parse taobao.items.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_items_get_xml)
+    rsp.items.should_not nil
+  end
+  #taobao.items.inventory.get 得到当前会话用户库存中的商品列表
+  it "should parse taobao.items.inventory.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_items_inventory_get_xml)
+    rsp.items.size.should eql(1)
+  end
+  #taobao.items.list.get 得到当前会话用户库存中的商品列表
+  it "should parse taobao.items.list.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_items_list_get_xml)
+    rsp.items.size.should eql(1)
+  end
+  #taobao.items.onsale.get 获取当前会话用户出售中的商品列表
+  it "should parse taobao.items.onsale.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_items_onsale_get_xml)
+    rsp.items.size.should eql(1)
+  end
+  #taobao.items.search 搜索商品信息
+  it "should parse taobao.items.search" do
+    rsp = TaobaoSDK::Parser.process(taobao_items_search_xml)
+    rsp.item_searchs.size.should eql(1)
+  end
+  #taobao.product.add 上传一个产品，不包括产品非主图和属性图片
+  it "should parse taobao.product.add" do
+    rsp = TaobaoSDK::Parser.process(taobao_product_add_xml)
+    rsp.product.should_not nil
+  end
+  #taobao.product.get 获取一个产品的信息
+  it "should parse taobao.product.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_product_get_xml)
+    rsp.product.should_not nil
+  end
+  #taobao.product.update 修改一个产品，可以修改主图，不能修改子图片
+  it "should parse taobao.product.update" do
+    rsp = TaobaoSDK::Parser.process(taobao_product_update_xml)
+    rsp.product.should_not nil
+
+  end
+  #taobao.products.get 获取产品列表
+  it "should parse taobao.products.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_products_get_xml)
+    rsp.products.size.should eql(1)
+  end
+  #taobao.products.search 搜索产品信息
+  it "should parse taobao.products.search" do
+    rsp = TaobaoSDK::Parser.process(taobao_products_search_xml)
+    rsp.products.size.should eql(1)
+  end
+  #taobao.product.img.delete 删除产品非主图
+  it "should parse taobao.product.img.delete" do
+    rsp = TaobaoSDK::Parser.process(taobao_product_img_delete_xml)
+    rsp.product_img.should_not nil
+
+  end
+  #taobao.product.img.upload 删除产品非主图
+  it "should parse taobao.product.img.upload" do
+    rsp = TaobaoSDK::Parser.process(taobao_product_img_upload_xml)
+    rsp.product_img.should_not nil
+
+  end
+  #taobao.product.propimg.delete 删除产品属性图
+  it "should parse taobao.propimg.delete" do
+    rsp = TaobaoSDK::Parser.process(taobao_product_propimg_delete_xml)
+    rsp.product_prop_img.should_not nil
+  end
+  #taobao.product.propimg.upload 删除产品属性图
+  it "should parse taobao.propimg.upload" do
+    rsp = TaobaoSDK::Parser.process(taobao_product_propimg_upload_xml)
+    rsp.product_prop_img.should_not nil
+  end
+  #taobao.skus.custom.get 根据外部ID取商品SKU
+  it "should parse taobao.skus.custom.get" do
+    rsp = TaobaoSDK::Parser.process(taobao_skus_custom_get_xml)
+    rsp.skus.size.should eql(5)
+
+  end
+
+
+
 end
