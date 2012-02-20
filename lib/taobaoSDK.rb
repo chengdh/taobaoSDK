@@ -85,6 +85,46 @@ require "taobaoSDK/model/order"
 require "taobaoSDK/model/trade"
 
 require "taobaoSDK/model/topats_result_get_response"
-##########################交易API#################################
+
+#########################评价API#################################
+require "taobaoSDK/model/trade_rate"
+
+#########################物流API#################################
+require "taobaoSDK/model/carriage_detail"
+require "taobaoSDK/model/transit_step_info"
+require "taobaoSDK/model/area"
+require "taobaoSDK/model/top_fee"
+require "taobaoSDK/model/delivery_template"
+require "taobaoSDK/model/partner_detail"
+require "taobaoSDK/model/logistics_company"
+require "taobaoSDK/model/shipping"
+require "taobaoSDK/model/address_result"
+require "taobaoSDK/model/logistics_partner"
+
+
+#########################店铺API#################################
+require "taobaoSDK/model/shop_cat"
+require "taobaoSDK/model/shop_score"
+require "taobaoSDK/model/seller_cat"
+require "taobaoSDK/model/shop"
+
+#TODO 旺旺API
+#TODO 主动通知业务API
+#TODO 系统API
+#TODO 物流宝API
+#TODO 信息安全API
+#TODO 收藏夹API
+#TODO 营销API
+#TODO 淘花API(数字频道)
+#TODO 酒店业务
+#TODO 店铺会员管理API
+#TODO 多媒体平台API
+#TODO 子帐号管理API
+#TODO 在线订购API
+#TODO 退款API
+#TODO 掌柜说API
+
+
+
 module TaobaoSDK
 end
