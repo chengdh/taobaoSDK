@@ -249,8 +249,8 @@ describe TaobaoSDK::Parser do
   it "should parse taobao.skus.custom.get" do
     rsp = TaobaoSDK::Parser.process(taobao_skus_custom_get_xml)
     rsp.skus.size.should eql(5)
-
   end
+  #####################交易api
 
 
 

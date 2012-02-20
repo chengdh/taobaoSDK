@@ -72,5 +72,19 @@ require "taobaoSDK/model/product_img_upload_response"
 require "taobaoSDK/model/product_propimg_delete_response"
 require "taobaoSDK/model/product_propimg_upload_response"
 require "taobaoSDK/model/skus_custom_get_response"
+
+##########################交易API#################################
+require "taobaoSDK/model/subtask"
+require "taobaoSDK/model/task"
+require "taobaoSDK/model/promotion_detail"
+require "taobaoSDK/model/order_amount"
+require "taobaoSDK/model/service_order"
+require "taobaoSDK/model/trade_amount"
+require "taobaoSDK/model/trade_confirm_fee"
+require "taobaoSDK/model/order"
+require "taobaoSDK/model/trade"
+
+require "taobaoSDK/model/topats_result_get_response"
+##########################交易API#################################
 module TaobaoSDK
 end
