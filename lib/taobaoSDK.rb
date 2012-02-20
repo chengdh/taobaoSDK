@@ -4,11 +4,17 @@ require 'rexml/document'
 require "taobaoSDK/version"
 require "taobaoSDK/parser"
 require "taobaoSDK/model/model"
+
+##########################用户API#################################
 require "taobaoSDK/model/user_credit"
 require "taobaoSDK/model/location"
 require "taobaoSDK/model/user"
 require "taobaoSDK/model/user_get_response"
 require "taobaoSDK/model/users_get_response"
+
+
+
+##########################类目API#################################
 require "taobaoSDK/model/item_cat"
 require "taobaoSDK/model/brand"
 require "taobaoSDK/model/item_prop"
@@ -18,6 +24,8 @@ require "taobaoSDK/model/itemcats_authorize_get_response"
 require "taobaoSDK/model/itemcats_get_response"
 require "taobaoSDK/model/itemprops_get_response"
 require "taobaoSDK/model/itempropvalues_get_response"
+
+##########################商品API#################################
 require "taobaoSDK/model/after_sale"
 require "taobaoSDK/model/aftersale_get_response"
 require "taobaoSDK/model/sku"
@@ -108,21 +116,45 @@ require "taobaoSDK/model/shop_score"
 require "taobaoSDK/model/seller_cat"
 require "taobaoSDK/model/shop"
 
-#TODO 旺旺API
-#TODO 主动通知业务API
-#TODO 系统API
-#TODO 物流宝API
-#TODO 信息安全API
-#TODO 收藏夹API
-#TODO 营销API
+#########################主动通知业务API#################################
+require "taobaoSDK/model/notify_refund"
+require "taobaoSDK/model/notify_item"
+require "taobaoSDK/model/notify_trade"
+require "taobaoSDK/model/app_customer"
+
+#########################系统API#################################
+require "taobaoSDK/model/time_get_response"
+
+
+#########################信息安全API#################################
+require "taobaoSDK/model/kfc_search_result"
+
+#########################收藏夹API#################################
+require "taobaoSDK/model/collect_item"
+
+#########################退款API#################################
+require "taobaoSDK/model/refund_remind_timeout"
+require "taobaoSDK/model/pic_url"
+require "taobaoSDK/model/refund_message"
+require "taobaoSDK/model/refund"
+
+#########################店铺会员管理APi#################################
+require "taobaoSDK/model/group_domain"
+require "taobaoSDK/model/basic_member"
+require "taobaoSDK/model/grade_promotion"
+require "taobaoSDK/model/rule_data"
+require "taobaoSDK/model/crm_member"
+require "taobaoSDK/model/group"
+
 #TODO 淘花API(数字频道)
-#TODO 酒店业务
-#TODO 店铺会员管理API
 #TODO 多媒体平台API
 #TODO 子帐号管理API
 #TODO 在线订购API
-#TODO 退款API
+#TODO 营销API
+#TODO 酒店业务
 #TODO 掌柜说API
+#TODO 物流宝API
+#TODO 旺旺API
 
 
 
