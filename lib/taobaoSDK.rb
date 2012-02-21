@@ -146,10 +146,39 @@ require "taobaoSDK/model/rule_data"
 require "taobaoSDK/model/crm_member"
 require "taobaoSDK/model/group"
 
-#TODO 淘花API(数字频道)
-#TODO 多媒体平台API
-#TODO 子帐号管理API
-#TODO 在线订购API
+#########################淘花APi(数字频道)#################################
+require "taobaoSDK/model/taohua_item"
+require "taobaoSDK/model/taohua_search_item"
+require "taobaoSDK/model/taohua_category"
+require "taobaoSDK/model/taohua_cate_stat"
+require "taobaoSDK/model/taohua_search_items"
+require "taobaoSDK/model/taohua_directory"
+require "taobaoSDK/model/taohua_root_directory"
+require "taobaoSDK/model/taohua_cate_prop"
+require "taobaoSDK/model/taohua_cate_prop_value"
+require "taobaoSDK/model/taohua_item_pv_pair"
+require "taobaoSDK/model/taohua_audio_reader_track"
+require "taobaoSDK/model/taohua_order"
+require "taobaoSDK/model/taohua_orders"
+require "taobaoSDK/model/taohua_item_comment"
+require "taobaoSDK/model/taohua_audio_reader_album_summary"
+require "taobaoSDK/model/taohua_audio_reader_album"
+require "taobaoSDK/model/taohua_item_comment_result"
+require "taobaoSDK/model/taohua_update_info"
+require "taobaoSDK/model/taohua_audio_reader_my_album"
+
+#########################多媒体平台APi#################################
+require "taobaoSDK/model/user_info"
+require "taobaoSDK/model/picture_category"
+require "taobaoSDK/model/reference_detail"
+require "taobaoSDK/model/picture"
+#########################子帐号管理APi#################################
+require "taobaoSDK/model/sub_user_info"
+
+#########################在线订购API#################################
+require "taobaoSDK/model/article_user_subscribe"
+require "taobaoSDK/model/article_biz_order"
+require "taobaoSDK/model/article_sub"
 #TODO 营销API
 #TODO 酒店业务
 #TODO 掌柜说API
