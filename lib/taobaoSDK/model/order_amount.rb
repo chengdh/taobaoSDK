@@ -1,6 +1,6 @@
 #coding: utf-8
 #子订单的帐务数据结构
-module TaobaSDK
+module TaobaoSDK
   class OrderAmount
     include XML::Mapping
     numeric_node :payment,"payment",:default_value => 0

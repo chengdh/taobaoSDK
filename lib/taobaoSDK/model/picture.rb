@@ -4,12 +4,12 @@ module TaobaoSDK
   class Picture
     include XML::Mapping
     boolean_node :referenced,"referenced","true","false",:default_value => false
-    number_node :picture_id,"picture_id",:default_value => nil
-    number_node :picture_category_id,"picture_category_id",:default_value => nil
+    numeric_node :picture_id,"picture_id",:default_value => nil
+    numeric_node :picture_category_id,"picture_category_id",:default_value => nil
     text_node :picture_path,"picture_path",:default_value => nil
     text_node :title,"title",:default_value => nil
-    number_node :sizes,"sizes",:default_value => nil
-    number_node :uid,"uid",:default_value => nil
+    numeric_node :sizes,"sizes",:default_value => nil
+    numeric_node :uid,"uid",:default_value => nil
     text_node :pixel,"pixel",:default_value => nil
     text_node :status,"status",:default_value => nil
     text_node :deleted,"deleted",:default_value => nil

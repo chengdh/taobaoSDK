@@ -1,6 +1,6 @@
 #coding: utf-8
 #交易的优惠信息详情
-module TaobaSDK
+module TaobaoSDK
   class PromotionDetail
     include XML::Mapping
     numeric_node :id,"id",:default_value => nil

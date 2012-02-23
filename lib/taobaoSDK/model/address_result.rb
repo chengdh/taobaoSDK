@@ -12,7 +12,7 @@ module TaobaoSDK
     text_node :zip_code,"zip_code",:default_value => nil
     text_node :phone,"phone",:default_value => nil
     text_node :mobile_phone,"mobile_phone",:default_value => nil
-    stext_node :seller_company,"seller_company",:default_value => nil
+    text_node :seller_company,"seller_company",:default_value => nil
     text_node :memo,"memo",:default_value => nil
     numeric_node :area_id,"area_id","true","false",:default_value => false
     boolean_node :send_def,"send_def","true","false",:default_value => false

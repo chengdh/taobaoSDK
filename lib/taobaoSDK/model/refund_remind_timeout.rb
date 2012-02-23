@@ -1,6 +1,6 @@
 #coding: utf-8
 #退款超时数据结构
-module TaobaSDK
+module TaobaoSDK
   class RefundRemindTimeout
     include XML::Mapping
     numeric_node :remind_type,"remind_type",:default_value => nil

@@ -2,6 +2,7 @@
 #店铺信息
 module TaobaoSDK
   class Shop
+    include XML::Mapping
     numeric_node :sid,"sid",:default_value => nil
     numeric_node :cid,"cid",:default_value => nil
     text_node :nick,"nick",:default_value => nil

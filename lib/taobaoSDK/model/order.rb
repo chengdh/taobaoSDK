@@ -1,6 +1,6 @@
 #coding: utf-8
 #订单结构
-module TaobaSDK
+module TaobaoSDK
   class Order
     include XML::Mapping
     numeric_node :cid,"cid",:default_value => nil

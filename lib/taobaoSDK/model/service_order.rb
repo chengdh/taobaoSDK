@@ -1,6 +1,6 @@
 #coding: utf-8
 #商城虚拟服务子订单数据结构
-module TaobaSDK
+module TaobaoSDK
   class ServiceOrder
     include XML::Mapping
     numeric_node :oid,"oid",:default_value => nil
