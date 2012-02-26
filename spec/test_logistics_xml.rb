@@ -29,7 +29,7 @@ end
 #FIXME 此处API文档中的XML定义是否油错误
 def taobao_delivery_template_add_xml
 <<XML
-<delivery_template_add_response>
+<delivery_postage_add_response>
     <delivery_template>
         <template_id>
             100203
@@ -75,6 +75,6 @@ def taobao_delivery_template_add_xml
             2000-01-01 00:00:00
         </modified>
     </delivery_template>
-</delivery_template_add_response>
+</delivery_postage_add_response>
 XML
 end

@@ -1,6 +1,7 @@
 #coding: utf-8
 require 'xml/mapping'
 require 'rexml/document'
+require 'default_root_element_name'
 require "taobaoSDK/version"
 require "taobaoSDK/parser"
 require "taobaoSDK/model/model"

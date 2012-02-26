@@ -2,18 +2,12 @@ PATH
   remote: .
   specs:
     taobaoSDK (0.0.1)
-      activesupport
       xml-mapping
 
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.2.1)
-      i18n (~> 0.6)
-      multi_json (~> 1.0)
     diff-lcs (1.1.3)
-    i18n (0.6.0)
-    multi_json (1.0.4)
     rspec (2.8.0)
       rspec-core (~> 2.8.0)
       rspec-expectations (~> 2.8.0)
