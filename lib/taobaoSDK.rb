@@ -130,6 +130,8 @@ require "taobaoSDK/model/shipping"
 require "taobaoSDK/model/address_result"
 require "taobaoSDK/model/logistics_partner"
 
+require "taobaoSDK/model/areas_get_response"
+require "taobaoSDK/model/delivery_template_add_response"
 
 #########################店铺API#################################
 require "taobaoSDK/model/shop_cat"
