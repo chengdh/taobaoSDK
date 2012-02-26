@@ -1,6 +1,6 @@
 #coding: utf-8
 #评价列表
-module TaobaSDK
+module TaobaoSDK
   class TradeRate
     include XML::Mapping
     boolean_node :valid_score,"valid_score","true","false",:default_value =>false

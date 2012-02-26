@@ -112,6 +112,11 @@ require "taobaoSDK/model/trades_sold_increment_get_response"
 
 #########################评价API#################################
 require "taobaoSDK/model/trade_rate"
+require "taobaoSDK/model/traderate_add_response"
+require "taobaoSDK/model/traderate_list_add_response"
+require "taobaoSDK/model/traderates_get_response"
+require "taobaoSDK/model/traderates_get_response"
+require "taobaoSDK/model/traderates_search_response"
 
 #########################物流API#################################
 require "taobaoSDK/model/carriage_detail"
