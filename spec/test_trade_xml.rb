@@ -18,3 +18,873 @@ def taobao_topats_result_get_xml
 	</topats_result_get_response>
 XML
 end
+#taobao.topats.trade.accountreport.get 异步获取淘宝卖家绑定的支付宝账户的财务明细
+def taobao_topats_trade_accountreport_get_xml
+<<XML
+<topats_trade_accountreport_get_response>
+    <task>
+        <task_id>
+            12345
+        </task_id>
+        <created>
+            2000-01-01 00:00:00
+        </created>
+    </task>
+</topats_trade_accountreport_get_response>
+XML
+end
+#taobao.topats.trades.fullinfo.get 异步批量获取交易订单详情api
+def taobao_topats_trades_fullinfo_get_xml
+<<XML
+<topats_trades_fullinfo_get_response>
+    <task>
+        <task_id>
+            12345
+        </task_id>
+        <created>
+            2000-01-01 00:00:00
+        </created>
+    </task>
+</topats_trades_fullinfo_get_response>
+XML
+end
+#taobao.trade.amount.get 交易订单帐务查询
+def taobao_trade_amount_get_xml
+<<XML
+<trade_amount_get_response>
+    <trade_amount>
+        <tid>
+            123456
+        </tid>
+        <alipay_no>
+            2009112081173831
+        </alipay_no>
+        <created>
+            2000-01-01 00:00:00
+        </created>
+        <pay_time>
+            2000-01-01 00:00:00
+        </pay_time>
+        <end_time>
+            2000-01-01 00:00:00
+        </end_time>
+        <total_fee>
+            200.07
+        </total_fee>
+        <post_fee>
+            200.07
+        </post_fee>
+        <cod_fee>
+            12.07
+        </cod_fee>
+        <payment>
+            200.07
+        </payment>
+        <commission_fee>
+            200.07
+        </commission_fee>
+        <buyer_obtain_point_fee>
+            0
+        </buyer_obtain_point_fee>
+        <promotion_details>
+            <promotion_name>
+                满就减钱
+            </promotion_name>
+            <discount_fee>
+                10.00
+            </discount_fee>
+            <gift_item_name>
+                晨光签字笔
+            </gift_item_name>
+        </promotion_details>
+        <order_amounts>
+            <oid>
+                123456
+            </oid>
+            <title>
+                山寨版测试机器
+            </title>
+            <sku_properties_name>
+                颜色:桔色;尺码:M
+            </sku_properties_name>
+            <num>
+                12
+            </num>
+            <price>
+                200.07
+            </price>
+            <discount_fee>
+                200.07
+            </discount_fee>
+            <adjust_fee>
+                1.01
+            </adjust_fee>
+            <payment>
+                200.07
+            </payment>
+            <promotion_name>
+                满就减钱
+            </promotion_name>
+            <num_iid>
+                123456
+            </num_iid>
+            <sku_id>
+                123456
+            </sku_id>
+        </order_amounts>
+    </trade_amount>
+</trade_amount_get_response>
+XML
+end
+#taobao.trade.close 卖家关闭一笔交易
+def taobao_trade_close_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<trade_close_response>
+    <trade>
+        <modified>
+            2010-05-11 10:51:15
+        </modified>
+        <tid>
+            22328015740301
+        </tid>
+    </trade>
+</trade_close_response>
+<!--vm127.sqa-->
+XML
+end
+#taobao.trade.confirmfee.get 获取交易确认收货费用
+def taobao_trade_confirmfee_get_xml
+<<XML
+<trade_confirmfee_get_response>
+    <trade_confirm_fee>
+        <confirm_fee>
+            200.07
+        </confirm_fee>
+        <confirm_post_fee>
+            200.07
+        </confirm_post_fee>
+        <is_last_order>
+            true
+        </is_last_order>
+    </trade_confirm_fee>
+</trade_confirmfee_get_response>
+XML
+end
+#taobao.trade.fullinfo.get 获取单笔交易的详细信息
+def taobao_trade_fullinfo_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<trade_fullinfo_get_response>
+    <trade>
+        <adjust_fee>
+            0.00
+        </adjust_fee>
+        <available_confirm_fee>
+            50.00
+        </available_confirm_fee>
+        <buyer_alipay_no>
+            tbtest1062@taobaotest.com
+        </buyer_alipay_no>
+        <buyer_email>
+            tbtest1062@taobaotest.com
+        </buyer_email>
+        <buyer_message>
+            buyerMessage
+        </buyer_message>
+        <buyer_nick>
+            tbtest1062
+        </buyer_nick>
+        <buyer_obtain_point_fee>
+            0
+        </buyer_obtain_point_fee>
+        <buyer_rate>
+            false
+        </buyer_rate>
+        <cod_fee>
+            0.00
+        </cod_fee>
+        <created>
+            2010-05-11 10:46:17
+        </created>
+        <discount_fee>
+            0.00
+        </discount_fee>
+        <has_post_fee>
+            true
+        </has_post_fee>
+        <iid>
+            29e5b5d76cb3dc2b627cb3f94988592f
+        </iid>
+        <modified>
+            2010-05-11 10:46:17
+        </modified>
+        <num>
+            1
+        </num>
+        <orders list="true">
+            <order>
+                <adjust_fee>
+                    0.00
+                </adjust_fee>
+                <buyer_rate>
+                    false
+                </buyer_rate>
+                <discount_fee>
+                    0.00
+                </discount_fee>
+                <iid>
+                    29e5b5d76cb3dc2b627cb3f94988592f
+                </iid>
+                <num>
+                    1
+                </num>
+                <oid>
+                    22328013190301
+                </oid>
+                <payment>
+                    55.00
+                </payment>
+                <pic_path>
+                    http://zz.bb.cc
+		</pic_path>
+	   </order>
+	</orders>
+   </trade>
+</trade_fullinfo_get_response>
+	
+XML
+end
+#taobao.trade.get 获取单笔交易的部分信息(性能高)
+def taobao_trade_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<trade_get_response>
+    <trade>
+        <adjust_fee>
+            0.00
+        </adjust_fee>
+        <available_confirm_fee>
+            50.00
+        </available_confirm_fee>
+        <buyer_alipay_no>
+            tbtest1062@taobaotest.com
+        </buyer_alipay_no>
+        <buyer_email>
+            tbtest1062@taobaotest.com
+        </buyer_email>
+        <buyer_message>
+            buyerMessage
+        </buyer_message>
+        <buyer_nick>
+            tbtest1062
+        </buyer_nick>
+        <buyer_obtain_point_fee>
+            0
+        </buyer_obtain_point_fee>
+        <buyer_rate>
+            false
+        </buyer_rate>
+        <cod_fee>
+            0.00
+        </cod_fee>
+        <created>
+            2010-05-11 10:46:17
+        </created>
+        <discount_fee>
+            0.00
+        </discount_fee>
+        <has_post_fee>
+            true
+        </has_post_fee>
+        <iid>
+            29e5b5d76cb3dc2b627cb3f94988592f
+        </iid>
+        <modified>
+            2010-05-11 10:46:17
+        </modified>
+        <num>
+            1
+        </num>
+        <orders list="true">
+            <order>
+                <adjust_fee>
+                    0.00
+                </adjust_fee>
+                <buyer_rate>
+                    false
+                </buyer_rate>
+                <discount_fee>
+                    0.00
+                </discount_fee>
+                <iid>
+                    29e5b5d76cb3dc2b627cb3f94988592f
+                </iid>
+                <num>
+                    1
+                </num>
+                <oid>
+                    22328013190301
+                </oid>
+                <payment>
+                    55.00
+                </payment>
+                <pic_path>
+                    http://zz.bb.cc
+		</pic_path>
+	   </order>
+	</orders>
+   </trade>
+</trade_get_response>
+XML
+end
+#taobao.trade.memo.add 对一笔交易添加备注
+def taobao_trade_memo_add_xml
+<<XML
+<trade_memo_add_response>
+    <trade>
+        <tid>
+            2231958578
+        </tid>
+        <created>
+            2009-11-13 13:40:21
+        </created>
+    </trade>
+</trade_memo_add_response>
+XML
+end
+#taobao.trade.memo.update 修改一笔交易备注
+def taobao_trade_memo_update_xml
+<<XML
+<trade_memo_update_response>
+    <trade>
+        <tid>
+            2231958578
+        </tid>
+        <created>
+            2009-11-13 13:40:21
+        </created>
+    </trade>
+</trade_memo_update_response>
+XML
+end
+#taobao.trade.ordersku.update 更新交易订单的销售属性
+def taobao_trade_ordersku_update_xml
+<<XML
+<trade_ordersku_update_response>
+    <order>
+        <oid>
+            2231958349
+        </oid>
+        <modified>
+            2000-01-01 00:00:00
+        </modified>
+    </order>
+</trade_ordersku_update_response>
+XML
+end
+#taobao.trade.postage.update 修改订单邮费价格
+def taobao_trade_postage_update_xml
+<<XML
+<trade_postage_update_response>
+    <trade>
+        <modified>
+            2011-09-01 12:30:55
+        </modified>
+        <total_fee>
+            200.07
+        </total_fee>
+        <post_fee>
+            200.07
+        </post_fee>
+        <payment>
+            200.07
+        </payment>
+    </trade>
+</trade_postage_update_response>
+XML
+end
+#taobao.trade.receivetime.delay 延长交易收货时间
+def taobao_trade_receivetime_delay_xml
+<<XML
+<trade_receivetime_delay_response>
+    <trade>
+        <tid>
+            2231958349
+        </tid>
+        <modified>
+            2000-01-01 00:00:00
+        </modified>
+    </trade>
+</trade_receivetime_delay_response>
+XML
+end
+#taobao.trade.shippingaddress.update 更改交易的收货地址
+def taobao_trade_shippingaddress_update_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<trade_shippingaddress_update_response>
+    <trade>
+        <modified>
+            2010-05-11 09:26:05
+        </modified>
+        <tid>
+            2232158411
+        </tid>
+    </trade>
+</trade_shippingaddress_update_response>
+<!--vx215015.sqa-->
+XML
+end
+#taobao.trade.snapshot.get 交易快照查询
+def taobao_trade_snapshot_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<trade_snapshot_get_response>
+    <trade>
+        <orders list="true">
+            <order>
+                <oid>
+                    22328013760301
+                </oid>
+                <snapshot>
+                    snapshot0
+                </snapshot>
+            </order>
+        </orders>
+        <snapshot>
+            snapshot0
+        </snapshot>
+        <tid>
+            22328013760301
+        </tid>
+    </trade>
+</trade_snapshot_get_response>
+<!--vm127.sqa-->
+XML
+end
+#taobao.trades.bought.get 搜索当前会话用户作为买家达成的交易记录
+def taobao_trades_bought_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<trades_bought_get_response>
+    <trades list="true">
+        <trade>
+            <adjust_fee>
+                0.00
+            </adjust_fee>
+            <buyer_nick>
+                tbtest1062
+            </buyer_nick>
+            <buyer_obtain_point_fee>
+                0
+            </buyer_obtain_point_fee>
+            <buyer_rate>
+                false
+            </buyer_rate>
+            <cod_fee>
+                0.00
+            </cod_fee>
+            <consign_time>
+                2010-04-15 14:02:17
+            </consign_time>
+            <created>
+                2010-04-15 13:50:32
+            </created>
+            <discount_fee>
+                0.00
+            </discount_fee>
+            <end_time>
+                2010-04-28 14:03:04
+            </end_time>
+            <iid>
+                87044a28d424b70403f7b191556d62c4
+            </iid>
+            <modified>
+                2010-04-28 14:02:40
+            </modified>
+            <num>
+                1
+            </num>
+            <orders list="true">
+                <order>
+                    <adjust_fee>
+                        0.00
+                    </adjust_fee>
+                    <buyer_rate>
+                        false
+                    </buyer_rate>
+                    <discount_fee>
+                        0.00
+                    </discount_fee>
+                    <iid>
+                        87044a28d424b70403f7b191556d62c4
+                    </iid>
+                    <num>
+                        1
+                    </num>
+                    <oid>
+                        22327070840301
+                    </oid>
+                    <payment>
+                        100.00
+                    </payment>
+                    <price>
+                        100.00
+                    </price>
+                    <refund_status>
+                        NO_REFUND
+                    </refund_status>
+                    <seller_rate>
+                        false
+                    </seller_rate>
+                    <seller_type>
+                        C
+                    </seller_type>
+                    <sku_id>
+                        8158582
+                    </sku_id>
+                    <sku_properties_name>
+                        机身颜色:军绿色;手机套餐:一电一充
+                    </sku_properties_name>
+                    <status>
+                        TRADE_FINISHED
+                    </status>
+                    <title>
+                        jeck test
+                    </title>
+                    <total_fee>
+                        100.00
+                    </total_fee>
+                </order>
+            </orders>
+            <pay_time>
+                2010-04-15 14:00:58
+            </pay_time>
+            <payment>
+                100.00
+            </payment>
+            <point_fee>
+                0
+            </point_fee>
+            <post_fee>
+                0.00
+            </post_fee>
+            <price>
+                100.00
+            </price>
+            <real_point_fee>
+                0
+            </real_point_fee>
+            <received_payment>
+                100.00
+            </received_payment>
+            <seller_nick>
+                tbtest1061
+            </seller_nick>
+            <seller_rate>
+                false
+            </seller_rate>
+            <shipping_type>
+                free
+            </shipping_type>
+            <sid>
+                22327070840301
+            </sid>
+            <status>
+                TRADE_FINISHED
+            </status>
+            <tid>
+                22327070840301
+            </tid>
+            <title>
+                妙妙的经典小窝
+            </title>
+            <type>
+                fixed
+            </type>
+        </trade>
+    </trades>
+</trades_bought_get_response>
+XML
+end
+#taobao.trades.sold.get 搜索当前会话用户作为卖家已卖出的交易数据
+def taobao_trades_sold_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<trades_sold_get_response>
+    <trades list="true">
+        <trade>
+            <adjust_fee>
+                0.00
+            </adjust_fee>
+            <buyer_nick>
+                tbtest1062
+            </buyer_nick>
+            <buyer_obtain_point_fee>
+                0
+            </buyer_obtain_point_fee>
+            <buyer_rate>
+                false
+            </buyer_rate>
+            <cod_fee>
+                0.00
+            </cod_fee>
+            <consign_time>
+                2010-04-15 14:02:17
+            </consign_time>
+            <created>
+                2010-04-15 13:50:32
+            </created>
+            <discount_fee>
+                0.00
+            </discount_fee>
+            <end_time>
+                2010-04-28 14:03:04
+            </end_time>
+            <iid>
+                87044a28d424b70403f7b191556d62c4
+            </iid>
+            <modified>
+                2010-04-28 14:02:40
+            </modified>
+            <num>
+                1
+            </num>
+            <orders list="true">
+                <order>
+                    <adjust_fee>
+                        0.00
+                    </adjust_fee>
+                    <buyer_rate>
+                        false
+                    </buyer_rate>
+                    <discount_fee>
+                        0.00
+                    </discount_fee>
+                    <iid>
+                        87044a28d424b70403f7b191556d62c4
+                    </iid>
+                    <num>
+                        1
+                    </num>
+                    <oid>
+                        22327070840301
+                    </oid>
+                    <payment>
+                        100.00
+                    </payment>
+                    <price>
+                        100.00
+                    </price>
+                    <refund_status>
+                        NO_REFUND
+                    </refund_status>
+                    <seller_rate>
+                        false
+                    </seller_rate>
+                    <seller_type>
+                        C
+                    </seller_type>
+                    <sku_id>
+                        8158582
+                    </sku_id>
+                    <sku_properties_name>
+                        机身颜色:军绿色;手机套餐:一电一充
+                    </sku_properties_name>
+                    <status>
+                        TRADE_FINISHED
+                    </status>
+                    <title>
+                        jeck test
+                    </title>
+                    <total_fee>
+                        100.00
+                    </total_fee>
+                </order>
+            </orders>
+            <pay_time>
+                2010-04-15 14:00:58
+            </pay_time>
+            <payment>
+                100.00
+            </payment>
+            <point_fee>
+                0
+            </point_fee>
+            <post_fee>
+                0.00
+            </post_fee>
+            <price>
+                100.00
+            </price>
+            <real_point_fee>
+                0
+            </real_point_fee>
+            <received_payment>
+                100.00
+            </received_payment>
+            <seller_nick>
+                tbtest1061
+            </seller_nick>
+            <seller_rate>
+                false
+            </seller_rate>
+            <shipping_type>
+                free
+            </shipping_type>
+            <sid>
+                22327070840301
+            </sid>
+            <status>
+                TRADE_FINISHED
+            </status>
+            <tid>
+                22327070840301
+            </tid>
+            <title>
+                妙妙的经典小窝
+            </title>
+            <type>
+                fixed
+            </type>
+        </trade>
+    </trades>
+</trades_sold_get_response>
+XML
+end
+#taobao.trades.sold.increment.get 搜索当前会话用户作为卖家已卖出的增量交易数据
+def taobao_trades_sold_increment_get_xml
+<<XML
+<trades_sold_increment_get_response>
+    <total_results>
+        1
+    </total_results>
+    <trades list="true">
+        <trade>
+            <buyer_obtain_point_fee>
+                0
+            </buyer_obtain_point_fee>
+            <iid>
+                c327531c3d817b25197f11aa1e3aba70
+            </iid>
+            <type>
+                fixed
+            </type>
+            <end_time>
+                2009-11-10 17:04:10
+            </end_time>
+            <seller_nick>
+                tbtest1063
+            </seller_nick>
+            <created>
+                2009-11-03 16:58:11
+            </created>
+            <buyer_nick>
+                tbtest1064
+            </buyer_nick>
+            <tid>
+                2231939034
+            </tid>
+            <shipping_type>
+                express
+            </shipping_type>
+            <discount_fee>
+                0.00
+            </discount_fee>
+            <status>
+                TRADE_CLOSED_BY_TAOBAO
+            </status>
+            <modified>
+                2009-11-10 17:05:24
+            </modified>
+            <received_payment>
+                0.00
+            </received_payment>
+            <price>
+                100.00
+            </price>
+            <total_fee>
+                100.00
+            </total_fee>
+            <orders list="true">
+                <order>
+                    <iid>
+                        c327531c3d817b25197f11aa1e3aba70
+                    </iid>
+                    <adjust_fee>
+                        0.00
+                    </adjust_fee>
+                    <title>
+                        闲林山水
+                    </title>
+                    <sku_properties_name>
+                        颜色:天蓝色;尺码:S
+                    </sku_properties_name>
+                    <refund_status>
+                        NO_REFUND
+                    </refund_status>
+                    <sku_id>
+                        5893626
+                    </sku_id>
+                    <oid>
+                        2231939034
+                    </oid>
+                    <discount_fee>
+                        0.00
+                    </discount_fee>
+                    <payment>
+                        105.00
+                    </payment>
+                    <status>
+                        TRADE_CLOSED_BY_TAOBAO
+                    </status>
+                    <num>
+                        1
+                    </num>
+                    <total_fee>
+                        100.00
+                    </total_fee>
+                    <price>
+                        100.00
+                    </price>
+                </order>
+            </orders>
+            <buyer_rate>
+                false
+            </buyer_rate>
+            <seller_rate>
+                false
+            </seller_rate>
+            <adjust_fee>
+                0.00
+            </adjust_fee>
+            <cod_fee>
+                0.00
+            </cod_fee>
+            <title>
+                tbtest1063的店铺
+            </title>
+            <point_fee>
+                0
+            </point_fee>
+            <post_fee>
+                5.00
+            </post_fee>
+            <sid>
+                2231939034
+            </sid>
+            <payment>
+                105.00
+            </payment>
+            <real_point_fee>
+                0
+            </real_point_fee>
+            <num>
+                1
+            </num>
+        </trade>
+    </trades>
+</trades_sold_increment_get_response>
+XML
+end

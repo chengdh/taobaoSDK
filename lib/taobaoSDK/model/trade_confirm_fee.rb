@@ -1,7 +1,7 @@
 #coding: utf-8
 #确认收货费用结构
-module TaobaSDK
-  class TradeConfirFee
+module TaobaoSDK
+  class TradeConfirmFee
     include XML::Mapping
     numeric_node :confirm_fee,"confirm_fee",:default_value => 0
     numeric_node :confirm_post_fee,"confirm_post_fee",:default_value => 0

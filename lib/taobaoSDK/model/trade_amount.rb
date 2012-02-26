@@ -3,22 +3,22 @@
 module TaobaoSDK
   class TradeAmount
     include XML::Mapping
-    numeric_node :buyer_cod_fee,"buyer_cod_fee"
-    numeric_node :seller_cod_fee,"seller_cod_fee"
-    numeric_node :express_agency_fee,"express_agency_fee"
-    numeric_node :tid,"tid"
-    text_node :alipay_no,"alipay_no"
-    text_node :created,"created"
-    text_node :pay_time,"pay_time"
-    text_node :end_time,"end_time"
-    numeric_node :total_fee,"total_fee"
-    numeric_node :post_fee,"post_fee"
-    numeric_node :cod_fee,"cod_fee"
-    numeric_node :payment,"payment"
-    numeric_node :commission_fee,"commission_fee"
-    numeric_node :buyer_obtain_point_fee,"buyer_obtain_point_fee"
-    array_node :promotion_deatils,"promotion_deatils","promotion_deatil",:class => PromotionDetail
-    array_node :order_amounts,"order_amounts","order_amount",:class => OrderAmount
+    numeric_node :buyer_cod_fee,"buyer_cod_fee",:default_value => 0
+    numeric_node :seller_cod_fee,"seller_cod_fee",:default_value => 0
+    numeric_node :express_agency_fee,"express_agency_fee",:default_value => 0
+    numeric_node :tid,"tid",:default_value => nil
+    text_node :alipay_no,"alipay_no",:default_value => nil
+    text_node :created,"created",:default_value => nil
+    text_node :pay_time,"pay_time",:default_value => nil
+    text_node :end_time,"end_time",:default_value => nil
+    numeric_node :total_fee,"total_fee",:default_value => 0
+    numeric_node :post_fee,"post_fee",:default_value => 0
+    numeric_node :cod_fee,"cod_fee",:default_value => 0
+    numeric_node :payment,"payment",:default_value => 0
+    numeric_node :commission_fee,"commission_fee",:default_value => 0
+    numeric_node :buyer_obtain_point_fee,"buyer_obtain_point_fee",:default_value => 0
+    array_node :promotion_deatils,"promotion_deatils","promotion_deatil",:class => PromotionDetail,:default_value => []
+    array_node :order_amounts,"order_amounts","order_amount",:class => OrderAmount,:default_value => []
   end
 
 end

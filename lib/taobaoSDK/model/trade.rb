@@ -19,7 +19,7 @@ module TaobaoSDK
     text_node :buyer_memo,"buyer_memo",:default_value => nil
     text_node :seller_memo,"seller_memo",:default_value => nil
     text_node :pay_time,"pay_time",:default_value => nil
-    text_node :modified,"modified",:deffault_value => nil
+    text_node :modified,"modified",:default_value => nil
     numeric_node :buyer_obtain_point_fee,"buyer_obtain_point_fee",:default_value => 0
     numeric_node :cod_fee,"cod_fee",:default_value => 0
     numeric_node :buyer_flag,"buyer_flag",:default_value => nil
