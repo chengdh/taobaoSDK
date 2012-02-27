@@ -159,6 +159,14 @@ require "taobaoSDK/model/shop_score"
 require "taobaoSDK/model/seller_cat"
 require "taobaoSDK/model/shop"
 
+require "taobaoSDK/model/sellercats_list_add_response"
+require "taobaoSDK/model/sellercats_list_get_response"
+require "taobaoSDK/model/sellercats_list_update_response"
+require "taobaoSDK/model/shop_get_response"
+require "taobaoSDK/model/shop_remainshowcase_get_response"
+require "taobaoSDK/model/shop_update_response"
+require "taobaoSDK/model/shopcats_list_get_response"
+
 #########################主动通知业务API#################################
 require "taobaoSDK/model/notify_refund"
 require "taobaoSDK/model/notify_item"
