@@ -182,6 +182,8 @@ require "taobaoSDK/model/kfc_search_result"
 
 #########################收藏夹API#################################
 require "taobaoSDK/model/collect_item"
+require "taobaoSDK/model/favorite_add_response"
+require "taobaoSDK/model/favorite_search_response"
 
 #########################退款API#################################
 require "taobaoSDK/model/refund_remind_timeout"
@@ -230,6 +232,7 @@ require "taobaoSDK/model/sub_user_info"
 require "taobaoSDK/model/article_user_subscribe"
 require "taobaoSDK/model/article_biz_order"
 require "taobaoSDK/model/article_sub"
+
 #TODO 营销API
 #TODO 酒店业务
 #TODO 掌柜说API
