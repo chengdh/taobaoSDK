@@ -198,6 +198,7 @@ require "taobaoSDK/model/grade_promotion"
 require "taobaoSDK/model/rule_data"
 require "taobaoSDK/model/crm_member"
 require "taobaoSDK/model/group"
+require "taobaoSDK/model/crm_api"
 
 #########################淘花APi(数字频道)#################################
 require "taobaoSDK/model/taohua_item"

@@ -1,0 +1,679 @@
+﻿#coding: utf-8
+#taobao.taohua.audioreader.album.get 有声读物专辑详情
+def taobao_taohua_audioreader_album_get_xml
+<<XML
+<taohua_audioreader_album_get_response>
+    <audioreader_album>
+        <item_id>
+            3630199
+        </item_id>
+        <pic_url>
+            http:
+        </pic_url>
+        <title>
+            羞涩的玫瑰
+        </title>
+        <copyright>
+            浙江天信科技发展有限公司
+        </copyright>
+        <last_updated>
+            2011-04-07
+        </last_updated>
+        <price>
+            100.0
+        </price>
+        <status>
+            连载中
+        </status>
+        <description>
+            南京大学外语系学生张天喜和华雨露在去庐山的大轮上邂逅南京一中高中女生吴雪儿，在游历了庐山后，双方就断了联系。五年后，已经成为科大外语教师的张天喜在课堂上巧遇新生吴雪儿后，两人开始了绵长而苦涩的爱情。
+        </description>
+        <artist_name>
+            冯笑
+        </artist_name>
+        <format>
+            MP3
+        </format>
+        <bit_rate>
+            128kbps
+        </bit_rate>
+        <duration>
+            22:46:26
+        </duration>
+        <track_count>
+            50
+        </track_count>
+    </audioreader_album>
+</taohua_audioreader_album_get_response>
+XML
+end
+#taobao.taohua.audioreader.myalbums.get 获取我的有声书库专辑列表
+def taobao_taohua_audioreader_myalbums_get_xml
+<<XML
+<taohua_audioreader_myalbums_get_response>
+    <my_audioreader_albums list="true">
+        <taohua_audio_reader_my_album>
+            <item_id>
+                3766890
+            </item_id>
+            <serial_id>
+                12345
+            </serial_id>
+            <pic_url>
+                http:
+            </pic_url>
+            <title>
+                羞涩的玫瑰
+            </title>
+            <copyright>
+                浙江天信科技发展有限公司
+            </copyright>
+            <track_count>
+                35
+            </track_count>
+            <my_track_count>
+                30
+            </my_track_count>
+            <last_updated>
+                2011-04-07
+            </last_updated>
+            <status>
+                连载中
+            </status>
+        </taohua_audio_reader_my_album>
+    </my_audioreader_albums>
+    <total_count>
+        36
+    </total_count>
+</taohua_audioreader_myalbums_get_response>
+XML
+end
+#aobao.taohua.audioreader.mytracks.get 获取我的有声书库单曲列表
+def taobao_taohua_audioreader_mytracks_get_xml
+<<XML
+<taohua_audioreader_mytracks_get_response>
+    <my_audioreader_tracks list="true">
+        <taohua_audio_reader_track>
+            <item_id>
+                3630199
+            </item_id>
+            <title>
+                羞涩的玫瑰001
+            </title>
+            <duration>
+                22:46:26
+            </duration>
+            <price>
+                10.0
+            </price>
+            <last_updated>
+                2011-04-07
+            </last_updated>
+        </taohua_audio_reader_track>
+    </my_audioreader_tracks>
+    <total_count>
+        36
+    </total_count>
+</taohua_audioreader_mytracks_get_response>
+XML
+end
+#taobao.taohua.audioreader.recommend.get 获取花匠推荐的有声读物专辑列表
+def taobao_taohua_audioreader_recommend_get_xml
+<<XML
+<taohua_audioreader_recommend_get_response>
+    <audioreader_summaries list="true">
+        <taohua_audio_reader_album_summary>
+            <item_id>
+                3766890
+            </item_id>
+            <pic_url>
+                http:
+            </pic_url>
+            <title>
+                羞涩的玫瑰
+            </title>
+            <copyright>
+                浙江天信科技发展有限公司
+            </copyright>
+            <last_updated>
+                2011-04-07
+            </last_updated>
+            <price>
+                10.0
+            </price>
+            <track_count>
+                35
+            </track_count>
+            <status>
+                连载中
+            </status>
+        </taohua_audio_reader_album_summary>
+    </audioreader_summaries>
+    <total_count>
+        36
+    </total_count>
+</taohua_audioreader_recommend_get_response>
+XML
+end
+#taobao.taohua.audioreader.search 搜索有声读物专辑
+def taobao_taohua_audioreader_search_xml
+<<XML
+<taohua_audioreader_search_response>
+    <audioreader_search_results list="true">
+        <taohua_audio_reader_album_summary>
+            <item_id>
+                3766890
+            </item_id>
+            <pic_url>
+                http:
+            </pic_url>
+            <title>
+                羞涩的玫瑰
+            </title>
+            <copyright>
+                浙江天信科技发展有限公司
+            </copyright>
+            <last_updated>
+                2011-04-07
+            </last_updated>
+            <price>
+                10.0
+            </price>
+            <track_count>
+                35
+            </track_count>
+            <status>
+                连载中
+            </status>
+        </taohua_audio_reader_album_summary>
+    </audioreader_search_results>
+    <total_count>
+        36
+    </total_count>
+</taohua_audioreader_search_response>
+XML
+end
+#taobao.taohua.audioreader.track.auditionurl.get 有声读物单曲试听地址
+def taobao_taohua_audioreader_track_auditionuul_get_xml
+<<XML
+<taohua_audioreader_track_auditionurl_get_response>
+    <url>
+        http:
+    </url>
+</taohua_audioreader_track_auditionurl_get_response>
+XML
+end
+#taobao.taohua.audioreader.track.downloadurl.get 有声读物单曲下载地址
+def taobao_taohua_audioreader_track_downloadurl_get_xml
+<<XML
+<taohua_audioreader_track_downloadurl_get_response>
+    <url>
+        http:
+    </url>
+</taohua_audioreader_track_downloadurl_get_response>
+XML
+end
+#taobao.taohua.audioreader.tracks.get 有声读物单曲详情
+def taobao_taohua_audioreader_tracks_get_xml
+<<XML
+<taohua_audioreader_tracks_get_response>
+    <audioreader_tracks list="true">
+        <taohua_audio_reader_track>
+            <item_id>
+                3630199
+            </item_id>
+            <title>
+                羞涩的玫瑰001
+            </title>
+            <duration>
+                22:46:26
+            </duration>
+            <price>
+                10.0
+            </price>
+            <last_updated>
+                2011-04-07
+            </last_updated>
+        </taohua_audio_reader_track>
+    </audioreader_tracks>
+    <total_count>
+        36
+    </total_count>
+</taohua_audioreader_tracks_get_response>
+XML
+end
+#taobao.taohua.boughtitem.is 用户是否购买过该商品
+def taobao_taohua_boughtitem_is_xml
+<<XML
+<taohua_boughtitem_is_response>
+    <is_bought>
+        true
+    </is_bought>
+</taohua_boughtitem_is_response>
+XML
+end
+#taobao.taohua.childcates.get 获取子类目列表
+def taobao_taohua_childcates_get_xml
+<<XML
+<taohua_childcates_get_response>
+    <taohua_categories list="true">
+        <taohua_category>
+            <cate_id>
+                6698
+            </cate_id>
+            <name>
+                文档
+            </name>
+            <parent_id>
+                1
+            </parent_id>
+            <cate_level>
+                3
+            </cate_level>
+            <sort_order>
+                2
+            </sort_order>
+        </taohua_category>
+    </taohua_categories>
+    <total_cates>
+        15
+    </total_cates>
+</taohua_childcates_get_response>
+XML
+end
+#taobao.taohua.directory.get 获取文档目录
+def taobao_taohua_directory_get_xml
+<<XML
+<taohua_directory_get_response>
+    <tree_vo>
+        <name>
+            目录
+        </name>
+        <page>
+            1
+        </page>
+        <kids list="true">
+            <taohua_directory>
+                <name>
+                    目录
+                </name>
+                <rel>
+                    default
+                </rel>
+                <page>
+                    1
+                </page>
+            </taohua_directory>
+        </kids>
+    </tree_vo>
+</taohua_directory_get_response>
+XML
+end
+#taobao.taohua.item.like 我喜欢商品
+def taobao_taohua_item_like_xml
+<<XML
+<taohua_item_like_response>
+    <like_result>
+        success
+    </like_result>
+</taohua_item_like_response>
+XML
+end
+#taobao.taohua.itemcomment.add 对指定商品进行评论
+def taobao_taohua_itemcomment_add_xml
+<<XML
+<taohua_itemcomment_add_response>
+    <add_comment_result>
+        success
+    </add_comment_result>
+</taohua_itemcomment_add_response>
+XML
+end
+#taobao.taohua.itemcomments.get 获取淘花指定商品的评论列表
+def taobao_taohua_itemcomments_get_xml
+<<XML
+<taohua_itemcomments_get_response>
+    <taohua_comments_result>
+        <taohua_item_comments list="true">
+            <taohua_item_comment>
+                <comment>
+                    哇，这片子不错
+                </comment>
+                <comment_date>
+                    2000-01-01 00:00:00
+                </comment_date>
+                <user_nick>
+                    qy_test0
+                </user_nick>
+            </taohua_item_comment>
+        </taohua_item_comments>
+        <total_comment_num>
+            10
+        </total_comment_num>
+    </taohua_comments_result>
+</taohua_itemcomments_get_response>
+XML
+end
+#taobao.taohua.itemdetail.get 文档详情
+def taobao_taohua_itemdetail_get_xml
+<<XML
+<taohua_itemdetail_get_response>
+    <taohua_item_detail>
+        <item_id>
+            3364
+        </item_id>
+        <file_type>
+            epub
+        </file_type>
+        <size>
+            1024
+        </size>
+        <description>
+            商品描述信息
+        </description>
+        <root_cate_id>
+            100
+        </root_cate_id>
+        <root_cate_name>
+            文档
+        </root_cate_name>
+        <leaf_cate_id>
+            33642
+        </leaf_cate_id>
+        <leaf_cate_name>
+            武侠小说
+        </leaf_cate_name>
+        <status_name>
+            never_put_shelves
+        </status_name>
+        <pic_url>
+            http:
+        </pic_url>
+        <taohua_item_pv_pairs>
+            <taohua_cate_prop>
+                <prop_id>
+                    365
+                </prop_id>
+                <name>
+                    作者
+                </name>
+            </taohua_cate_prop>
+            <taohua_cate_prop_values>
+                <value_id>
+                    669
+                </value_id>
+                <prop_value>
+                    小刀
+                </prop_value>
+            </taohua_cate_prop_values>
+        </taohua_item_pv_pairs>
+    </taohua_item_detail>
+</taohua_itemdetail_get_response>
+XML
+end
+#taobao.taohua.itempayurl.get 获取商品支付链接
+def taobao_taohua_itempayurl_get_xml
+<<XML
+<dts_itempayurl_get_response>
+    <url>
+        http://www.taohua.com/xxx/xxxx.do?item_id=123&uid=942&sign=Xdsfsdf324234XXSf3434CVd&sign_type=RSA&timestamp=1293766895688
+    </url>
+</dts_itempayurl_get_response>
+XML
+end
+#taobao.taohua.itemresurl.get 获取商品资源下载地址
+def taobao_taohua_itemresurl_get_xml
+<<XML
+taohua_itemresurl_get_response>
+    <url>
+        http:
+    </url>
+</taohua_itemresurl_get_response>
+XML
+end
+#taobao.taohua.items.search 商品搜索列表接口
+def taobao_taohua_items_search_xml
+<<XML
+<taohua_items_search_response>
+    <search_items_result>
+        <taohua_search_items list="true">
+            <taohua_search_item>
+                <favorite>
+                    156
+                </favorite>
+                <author>
+                    张爱玲
+                </author>
+                <publish_date>
+                    2011-03-16
+                </publish_date>
+                <item_id>
+                    123123
+                </item_id>
+                <root_cate_id>
+                    1233
+                </root_cate_id>
+                <pic_url>
+                    http:
+                </pic_url>
+                <title>
+                    侠客行
+                </title>
+                <two_level_name>
+                    武侠
+                </two_level_name>
+                <suffix>
+                    pdf
+                </suffix>
+                <description>
+                    石破天
+                </description>
+                <shop_title>
+                    淘花专卖
+                </shop_title>
+                <seller_id>
+                    4984
+                </seller_id>
+                <seller_nick>
+                    兔斯基
+                </seller_nick>
+                <price>
+                    0.02
+                </price>
+                <doc_pages>
+                    22
+                </doc_pages>
+                <view_count>
+                    1065
+                </view_count>
+                <sell_count>
+                    11233
+                </sell_count>
+                <size>
+                    65000
+                </size>
+            </taohua_search_item>
+        </taohua_search_items>
+        <cate_paths list="true">
+            <taohua_category>
+                <cate_id>
+                    6698
+                </cate_id>
+                <name>
+                    文档
+                </name>
+                <parent_id>
+                    1
+                </parent_id>
+                <cate_level>
+                    3
+                </cate_level>
+                <sort_order>
+                    2
+                </sort_order>
+            </taohua_category>
+        </cate_paths>
+        <cate_stats list="true">
+            <taohua_cate_stat>
+                <cate_id>
+                    36
+                </cate_id>
+                <name>
+                    小说
+                </name>
+                <count>
+                    6000
+                </count>
+            </taohua_cate_stat>
+        </cate_stats>
+        <total_item>
+            100
+        </total_item>
+    </search_items_result>
+</taohua_items_search_response>
+XML
+end
+#taobao.taohua.latestupdateinfo.get 获取最新的更新信息
+def taobao_taohua_lastestupdateinfo_get_xml
+<<XML
+<taohua_latestupdateinfo_get_response>
+    <taohua_update_info>
+        <version>
+            0.2
+        </version>
+        <url>
+            http://www.taohua.com/sdjflsjd/cccc
+        </url>
+        <message>
+            有最新版本的软件
+        </message>
+    </taohua_update_info>
+</taohua_latestupdateinfo_get_response>
+XML
+end
+#taobao.taohua.orders.get 查询买家订单列表
+def taobao_taohua_orders_get_xml
+<<XML
+<taohua_orders_get_response>
+    <taohua_order_result>
+        <taohua_orders>
+            <order_id>
+                1233
+            </order_id>
+            <modified>
+                2010-12-27 10:48:00
+            </modified>
+            <pic_url>
+                http:
+            </pic_url>
+            <title>
+                侠客行
+            </title>
+            <price>
+                0.02
+            </price>
+            <seller_nick>
+                淘花卖家
+            </seller_nick>
+            <pay_status>
+                wait_pay
+            </pay_status>
+        </taohua_orders>
+        <total_order>
+            20
+        </total_order>
+    </taohua_order_result>
+</taohua_orders_get_response>
+XML
+end
+#taobao.taohua.previewurl.get 获取商品预览链接
+def taobao_taohua_previewurl_get_xml
+<<XML
+<taohua_previewurl_get_response>
+    <url>
+        http:
+    </url>
+</taohua_previewurl_get_response>
+XML
+end
+#taobao.taohua.staffrecitems.get 获取小二推荐的商品
+def taobao_taohua_staffrecitems_get_xml
+<<XML
+<taohua_staffrecitems_get_response>
+    <taohua_items list="true">
+        <taohua_item>
+            <price>
+                0.23
+            </price>
+            <favorite>
+                1000
+            </favorite>
+            <author>
+                张爱玲
+            </author>
+            <publish_date>
+                2011-03-16
+            </publish_date>
+            <item_id>
+                3364
+            </item_id>
+            <file_type>
+                epub
+            </file_type>
+            <size>
+                1024
+            </size>
+            <description>
+                商品描述信息
+            </description>
+            <root_cate_id>
+                100
+            </root_cate_id>
+            <root_cate_name>
+                文档
+            </root_cate_name>
+            <leaf_cate_id>
+                33642
+            </leaf_cate_id>
+            <leaf_cate_name>
+                武侠小说
+            </leaf_cate_name>
+            <status_name>
+                never_put_shelves
+            </status_name>
+            <pic_url>
+                http:
+            </pic_url>
+            <taohua_item_pv_pairs list="true">
+                <taohua_item_p_v_pair>
+                    <taohua_cate_prop>
+                        <prop_id>
+                            365
+                        </prop_id>
+                        <name>
+                            作者
+                        </name>
+                    </taohua_cate_prop>
+                    <taohua_cate_prop_values list="true">
+                        <taohua_cate_prop_value>
+                            <value_id>
+                                669
+                            </value_id>
+                            <prop_value>
+                                小刀
+                            </prop_value>
+                        </taohua_cate_prop_value>
+                    </taohua_cate_prop_values>
+                </taohua_item_p_v_pair>
+            </taohua_item_pv_pairs>
+            <title>
+                淘花书籍
+            </title>
+        </taohua_item>
+    </taohua_items>
+    <total_items>
+        20
+    </total_items>
+</taohua_staffrecitems_get_response>
+XML
+end

@@ -1,0 +1,314 @@
+﻿#coding: utf-8
+#taobao.refund.get 单笔退款详情
+def taobao_refund_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<refund_get_response>
+    <refund>
+        <refund_id>
+            117468
+        </refund_id>
+    </refund>
+</refund_get_response>
+<!--vm127.sqa-->
+XML
+end
+#taobao.refund.message.add 创建退款留言/凭证
+def taobao_fefund_message_add_xml
+<<XML
+<refund_message_add_response>
+    <refund_message>
+        <created>
+            2009-11-13 19:14:20
+        </created>
+        <id>
+            404188
+        </id>
+    </refund_message>
+</refund_message_add_response>
+XML
+#taobao.refund.messages.get 退款留言/凭证列表查询
+def taobao_refund_messages_get_xml
+<<XML
+<refund_messages_get_response>
+    <total_results>
+        48
+    </total_results>
+    <refund_messages list="true">
+        <refund_message>
+            <content>
+                测试信息
+            </content>
+            <pic_urls list="true">
+                <pic_url>
+                    <url>
+                        xxxxx
+                    </url>
+                </pic_url>
+            </pic_urls>
+            <refund_id>
+                127305
+            </refund_id>
+            <created>
+                2009-11-13 19:16:52
+            </created>
+            <owner_id>
+                65754071
+            </owner_id>
+            <owner_role>
+                2
+            </owner_role>
+            <owner_nick>
+                tbtest1202
+            </owner_nick>
+        </refund_message>
+    </refund_messages>
+</refund_messages_get_response>
+XML
+end
+#taobao.refund.refuse 卖家拒绝退款
+def taobao_refund_refuse_xml
+<<XML
+<refund_refuse_response>
+    <refund>
+        <refund_id>
+            83477
+        </refund_id>
+        <modified>
+            2000-01-01 00:00:00
+        </modified>
+        <status>
+            SUCCESS
+        </status>
+    </refund>
+</refund_refuse_response>
+XML
+end
+#taobao.refunds.apply.get 查询买家申请的退款列表
+def taobao_refunds_apply_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<refunds_apply_get_response>
+    <refunds list="true">
+        <refund>
+            <refund_id>
+                2222223
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                2222222
+            </refund_id>
+        </refund>
+    </refunds>
+    <total_results>
+        2
+    </total_results>
+</refunds_apply_get_response>
+<!--vm127.sqa-->
+XML
+end
+#taobao.refunds.receive.get 查询卖家收到的退款列表
+def taobao_refunds_receive_get_xml
+<<XML
+<?xml version="1.0" encoding="utf-8" ?>
+<refunds_receive_get_response>
+    <refunds list="true">
+        <refund>
+            <refund_id>
+                241286
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                236840
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                236839
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                233805
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                233804
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                233802
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                233800
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                233795
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                233794
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                233791
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                233790
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                232871
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                228566
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                215401
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                215400
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                215399
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                215398
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                215397
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                202812
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                179765
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                126750
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                126614
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                126599
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                126590
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                125899
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                125898
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                125897
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                125488
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                124981
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                124980
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                118538
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                118436
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                118434
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                118433
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                118432
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                118431
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                118427
+            </refund_id>
+        </refund>
+        <refund>
+            <refund_id>
+                118421
+            </refund_id>
+        </refund>
+    </refunds>
+    <total_results>
+        38
+    </total_results>
+</refunds_receive_get_response>
+<!--vm127.sqa-->
+XML
+end

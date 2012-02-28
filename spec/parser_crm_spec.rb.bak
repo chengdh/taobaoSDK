@@ -1,0 +1,6 @@
+﻿#coding: utf-8
+module TaobaoSDK
+	class CrmGradeGetResponse
+		include XML::Mapping
+	end
+end
