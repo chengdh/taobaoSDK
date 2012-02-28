@@ -1,7 +1,7 @@
 #coding: utf-8
 #有声读物专辑摘要
 module TaobaoSDK
-  class TaohuaAudioReaderAlbum
+  class TaohuaAudioReaderAlbumSummary
     include XML::Mapping
     numeric_node :item_id,"item_id",:default_value => nil
     text_node :pic_url,"pic_url",:default_value => nil

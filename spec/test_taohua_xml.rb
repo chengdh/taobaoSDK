@@ -4,9 +4,7 @@ def taobao_taohua_audioreader_album_get_xml
 <<XML
 <taohua_audioreader_album_get_response>
     <audioreader_album>
-        <item_id>
-            3630199
-        </item_id>
+        <item_id>3630199</item_id>
         <pic_url>
             http:
         </pic_url>
@@ -19,9 +17,7 @@ def taobao_taohua_audioreader_album_get_xml
         <last_updated>
             2011-04-07
         </last_updated>
-        <price>
-            100.0
-        </price>
+        <price>100.0</price>
         <status>
             连载中
         </status>
@@ -40,9 +36,7 @@ def taobao_taohua_audioreader_album_get_xml
         <duration>
             22:46:26
         </duration>
-        <track_count>
-            50
-        </track_count>
+        <track_count>50</track_count>
     </audioreader_album>
 </taohua_audioreader_album_get_response>
 XML
@@ -194,7 +188,7 @@ def taobao_taohua_audioreader_search_xml
 XML
 end
 #taobao.taohua.audioreader.track.auditionurl.get 有声读物单曲试听地址
-def taobao_taohua_audioreader_track_auditionuul_get_xml
+def taobao_taohua_audioreader_track_auditionurl_get_xml
 <<XML
 <taohua_audioreader_track_auditionurl_get_response>
     <url>
@@ -246,9 +240,7 @@ end
 def taobao_taohua_boughtitem_is_xml
 <<XML
 <taohua_boughtitem_is_response>
-    <is_bought>
-        true
-    </is_bought>
+    <is_bought>true</is_bought>
 </taohua_boughtitem_is_response>
 XML
 end
@@ -313,9 +305,7 @@ end
 def taobao_taohua_item_like_xml
 <<XML
 <taohua_item_like_response>
-    <like_result>
-        success
-    </like_result>
+    <like_result>success</like_result>
 </taohua_item_like_response>
 XML
 end
@@ -323,9 +313,7 @@ end
 def taobao_taohua_itemcomment_add_xml
 <<XML
 <taohua_itemcomment_add_response>
-    <add_comment_result>
-        success
-    </add_comment_result>
+    <add_comment_result>success</add_comment_result>
 </taohua_itemcomment_add_response>
 XML
 end

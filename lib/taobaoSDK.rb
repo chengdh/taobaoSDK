@@ -220,6 +220,7 @@ require "taobaoSDK/model/taohua_audio_reader_album"
 require "taobaoSDK/model/taohua_item_comment_result"
 require "taobaoSDK/model/taohua_update_info"
 require "taobaoSDK/model/taohua_audio_reader_my_album"
+require "taobaoSDK/model/taohua_api"
 
 #########################多媒体平台APi#################################
 require "taobaoSDK/model/user_info"
