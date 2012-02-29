@@ -27,9 +27,7 @@ end
 def taobao_media_dir_delete_xml
 <<XML
 <media_dir_delete_response>
-    <result>
-        true
-    </result>
+    <result>true</result>
 </media_dir_delete_response>
 XML
 end
@@ -37,9 +35,7 @@ end
 def taobao_media_dir_update_xml
 <<XML
 <media_dir_update_response>
-    <result>
-        true
-    </result>
+    <result>true</result>
 </media_dir_update_response>
 XML
 end
@@ -89,9 +85,7 @@ end
 def taobao_media_file_delete_xml
 <<XML
 <media_file_delete_response>
-    <result>
-        123456,45678
-    </result>
+    <result>123456,45678</result>
 </media_file_delete_response>
 XML
 end
@@ -167,12 +161,10 @@ def taobao_picture_category_get_xml
 XML
 end
 #taobao.picture.category.update 更新图片分类
-def tapbap_picture_category_update_xml
+def taobao_picture_category_update_xml
 <<XML
 <picture_category_update_response>
-    <done>
-        true
-    </done>
+    <done>true</done>
 </picture_category_update_response>
 XML
 end
@@ -180,9 +172,7 @@ end
 def taobao_picture_delete_xml
 <<XML
 <picture_delete_response>
-    <success>
-        true
-    </success>
+    <success>true</success>
 </picture_delete_response>
 XML
 end
@@ -237,9 +227,7 @@ end
 def taobao_picture_isreferenced_get_xml
 <<XML
 <picture_isreferenced_get_response>
-    <is_referenced>
-        true
-    </is_referenced>
+    <is_referenced>true</is_referenced>
 </picture_isreferenced_get_response>
 XML
 end
@@ -267,9 +255,7 @@ end
 def taobao_picture_replace_xml
 <<XML
 <picture_replace_response>
-    <done>
-        true
-    </done>
+    <done>true</done>
 </picture_replace_response>
 XML
 end
@@ -277,9 +263,7 @@ end
 def taobao_picture_update_xml
 <<XML
 <picture_update_response>
-    <done>
-        true
-    </done>
+    <done>true</done>
 </picture_update_response>
 XML
 end

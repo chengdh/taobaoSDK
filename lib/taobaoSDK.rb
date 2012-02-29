@@ -223,10 +223,13 @@ require "taobaoSDK/model/taohua_audio_reader_my_album"
 require "taobaoSDK/model/taohua_api"
 
 #########################多媒体平台APi#################################
+require "taobaoSDK/model/file"
+require "taobaoSDK/model/directory"
 require "taobaoSDK/model/user_info"
 require "taobaoSDK/model/picture_category"
 require "taobaoSDK/model/reference_detail"
 require "taobaoSDK/model/picture"
+require "taobaoSDK/model/media_api"
 #########################子帐号管理APi#################################
 require "taobaoSDK/model/sub_user_info"
 

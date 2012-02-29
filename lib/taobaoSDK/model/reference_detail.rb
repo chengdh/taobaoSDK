@@ -1,6 +1,6 @@
 #coding: utf-8
 #图片的引用详情
-module TaobaSDK
+module TaobaoSDK
   class ReferenceDetail
     include XML::Mapping
     text_node :reference_type,"reference_type",:default_value => nil
