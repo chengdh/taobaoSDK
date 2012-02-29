@@ -234,6 +234,7 @@ require "taobaoSDK/model/sub_user_info"
 require "taobaoSDK/model/article_user_subscribe"
 require "taobaoSDK/model/article_biz_order"
 require "taobaoSDK/model/article_sub"
+require "taobaoSDK/model/vas_api"
 
 #TODO 营销API
 #TODO 酒店业务
