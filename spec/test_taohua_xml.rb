@@ -401,18 +401,17 @@ XML
 end
 #taobao.taohua.itempayurl.get 获取商品支付链接
 def taobao_taohua_itempayurl_get_xml
+#NOTE 此处网上API似有错误
 <<XML
-<dts_itempayurl_get_response>
-    <url>
-        http://www.taohua.com/xxx/xxxx.do?item_id=123&uid=942&sign=Xdsfsdf324234XXSf3434CVd&sign_type=RSA&timestamp=1293766895688
-    </url>
-</dts_itempayurl_get_response>
+<taohua_itempayurl_get_response>
+    <url>http://www.taohua.com/xxx/xxxx.do</url>
+</taohua_itempayurl_get_response>
 XML
 end
 #taobao.taohua.itemresurl.get 获取商品资源下载地址
 def taobao_taohua_itemresurl_get_xml
 <<XML
-taohua_itemresurl_get_response>
+<taohua_itemresurl_get_response>
     <url>
         http:
     </url>
@@ -522,7 +521,7 @@ def taobao_taohua_items_search_xml
 XML
 end
 #taobao.taohua.latestupdateinfo.get 获取最新的更新信息
-def taobao_taohua_lastestupdateinfo_get_xml
+def taobao_taohua_latestupdateinfo_get_xml
 <<XML
 <taohua_latestupdateinfo_get_response>
     <taohua_update_info>
@@ -541,10 +540,12 @@ XML
 end
 #taobao.taohua.orders.get 查询买家订单列表
 def taobao_taohua_orders_get_xml
+#NOTE 此XML似乎有错误
 <<XML
 <taohua_orders_get_response>
     <taohua_order_result>
         <taohua_orders>
+	<taohua_order>
             <order_id>
                 1233
             </order_id>
@@ -566,6 +567,7 @@ def taobao_taohua_orders_get_xml
             <pay_status>
                 wait_pay
             </pay_status>
+		</taohua_order>
         </taohua_orders>
         <total_order>
             20

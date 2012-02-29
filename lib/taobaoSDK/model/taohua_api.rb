@@ -59,5 +59,61 @@ module TaobaoSDK
     include XML::Mapping
     object_node :tree_vo,"tree_vo",:class => TaohuaRootDirectory,:default_value => nil
   end
+  #taobao.taohua.item.like 我喜欢商品
+  class TaohuaItemLikeResponse
+    include XML::Mapping
+    boolean_node :like_result,"like_result","success","failure",:default_value => false
+  end
+  #taobao.taohua.itemcomment.add 对指定商品进行评论
+  class TaohuaItemcommentAddResponse
+    include XML::Mapping
+    boolean_node :add_comment_result,"add_comment_result","success","failure",:default_value => false
+  end
+  #taobao.taohua.itemcomments.get 获取淘花指定商品的评论列表
+  class TaohuaItemcommentsGetResponse
+    include XML::Mapping
+    object_node :taohua_comments_result,"taohua_comments_result",:class => TaohuaItemCommentResult,:default_value => []
+  end
+  #taobao.taohua.itemdetail.get 文档详情
+  class TaohuaItemdetailGetResponse
+    include XML::Mapping
+    object_node :taohua_item_detail,"taohua_item_detail",:class => TaohuaItem,:default_value => nil
+  end
+  #taobao.taohua.itempayurl.get 获取商品支付链接
+  class TaohuaItempayurlGetResponse
+    include XML::Mapping
+    text_node :url,"url",:default_value => nil
+  end
+  #taobao.taohua.itemresurl.get 获取商品资源下载地址
+  class TaohuaItemresurlGetResponse
+    include XML::Mapping
+    text_node :url,"url",:default_value => nil
+  end
+  #taobao.taohua.items.search 商品搜索列表接口
+  class TaohuaItemsSearchResponse
+    include XML::Mapping
+    object_node :search_items_result,"search_items_result",:class => TaohuaSearchItem,:default_value => nil
+  end
+  #taobao.taohua.latestupdateinfo.get 获取最新的更新信息
+  class TaohuaLatestupdateinfoGetResponse
+    include XML::Mapping
+    object_node :taohua_update_info,"taohua_update_info",:class => TaohuaUpdateInfo,:default_value => nil
+  end
+  #taobao.taohua.orders.get 查询买家订单列表
+  class TaohuaOrdersGetResponse
+    include XML::Mapping
+    object_node :taohua_order_result,"taohua_order_result",:class => TaohuaOrders,:default_value => nil
+  end
+  #taobao.taohua.staffrecitems.get 获取小二推荐的商品
+  class TaohuaStaffrecitemsGetResponse
+    include XML::Mapping
+    array_node :taohua_items,"taohua_items","taohua_item",:class => TaohuaItem,:default_value => []
+    numeric_node :total_items,"total_items",:default_value => 0
+  end
+  #taobao.taohua.previewurl.get 获取商品预览链接
+  class TaohuaPreviewurlGetResponse
+    include XML::Mapping
+    text_node :url,"url",:default_value => nil
+  end
 
 end

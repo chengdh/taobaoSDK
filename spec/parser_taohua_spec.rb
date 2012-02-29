@@ -60,4 +60,60 @@ describe TaobaoSDK::Parser do
     rsp = TaobaoSDK::Parser.process(taobao_taohua_directory_get_xml)
     rsp.tree_vo.should_not nil
   end
+  #taobao.taohua.item.like 我喜欢商品
+  it "should parse #taobao.taohua.item.like 我喜欢商品" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_item_like_xml)
+    rsp.like_result.should eql(true)
+  end
+  #taobao.taohua.itemcomment.add 对指定商品进行评论
+  it "should parse #taobao.taohua.itemcomment.add 对指定商品进行评论" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_itemcomment_add_xml)
+    rsp.add_comment_result.should eql(true)
+  end
+  #taobao.taohua.itemcomments.get 获取淘花指定商品的评论列表
+  it "should parse #taobao.taohua.itemcomments.get 获取淘花指定商品的评论列表" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_itemcomments_get_xml)
+    rsp.taohua_comments_result.should_not nil
+  end
+  #taobao.taohua.itemdetail.get 文档详情
+  it "should parse #taobao.taohua.itemdetail.get 文档详情" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_itemdetail_get_xml)
+    rsp.taohua_item_detail.should_not nil
+  end
+  #taobao.taohua.itempayurl.get 获取商品支付链接
+  it "should parse #taobao.taohua.itempayurl.get 获取商品支付链接" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_itempayurl_get_xml)
+    rsp.url.should_not nil
+
+  end
+  #taobao.taohua.itemresurl.get 获取商品资源下载地址
+  it "should parse #taobao.taohua.itemresurl.get 获取商品资源下载地址" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_itemresurl_get_xml)
+    rsp.url.should_not nil
+  end
+  #taobao.taohua.items.search 商品搜索列表接口
+  it "should parse #taobao.taohua.items.search 商品搜索列表接口" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_items_search_xml)
+    rsp.search_items_result.should_not nil
+  end
+  #taobao.taohua.latestupdateinfo.get 获取最新的更新信息
+  it "should parse #taobao.taohua.latestupdateinfo.get 获取最新的更新信息" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_latestupdateinfo_get_xml)
+    rsp.taohua_update_info.should_not nil
+  end
+  #taobao.taohua.orders.get 查询买家订单列表
+  it "should parse #taobao.taohua.orders.get 查询买家订单列表" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_orders_get_xml)
+    rsp.taohua_order_result.should_not nil
+  end
+  #taobao.taohua.staffrecitems.get 获取小二推荐的商品
+  it "should parse #taobao.taohua.staffrecitems.get 获取小二推荐的商品" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_staffrecitems_get_xml)
+    rsp.taohua_items.size.should > 0
+  end
+  #taobao.taohua.previewurl.get 获取商品预览链接
+  it "should parse #taobao.taohua.previewurl.get 获取商品预览链接" do
+    rsp = TaobaoSDK::Parser.process(taobao_taohua_previewurl_get_xml)
+    rsp.url.should_not nil
+  end
 end
