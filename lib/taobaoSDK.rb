@@ -190,6 +190,7 @@ require "taobaoSDK/model/refund_remind_timeout"
 require "taobaoSDK/model/pic_url"
 require "taobaoSDK/model/refund_message"
 require "taobaoSDK/model/refund"
+require "taobaoSDK/model/refund_api"
 
 #########################店铺会员管理APi#################################
 require "taobaoSDK/model/group_domain"

@@ -30,7 +30,7 @@ module TaobaoSDK
     text_node :company_name,"company_name",:default_value => nil
     text_node :sid,"sid",:default_value => nil
     text_node :address,"address",:default_value => nil
-    object_node :refund_remind_timeout,"refund_remind_timeout",:class => RefundRemindTimeout
+    object_node :refund_remind_timeout,"refund_remind_timeout",:class => RefundRemindTimeout,:default_value => nil
     numeric_node :num_iid,"num_iid",:default_value => nil
   end
 end

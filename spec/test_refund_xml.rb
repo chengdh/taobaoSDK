@@ -14,7 +14,7 @@ def taobao_refund_get_xml
 XML
 end
 #taobao.refund.message.add 创建退款留言/凭证
-def taobao_fefund_message_add_xml
+def taobao_refund_message_add_xml
 <<XML
 <refund_message_add_response>
     <refund_message>
@@ -27,6 +27,7 @@ def taobao_fefund_message_add_xml
     </refund_message>
 </refund_message_add_response>
 XML
+end
 #taobao.refund.messages.get 退款留言/凭证列表查询
 def taobao_refund_messages_get_xml
 <<XML
