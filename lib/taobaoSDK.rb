@@ -172,6 +172,9 @@ require "taobaoSDK/model/notify_refund"
 require "taobaoSDK/model/notify_item"
 require "taobaoSDK/model/notify_trade"
 require "taobaoSDK/model/app_customer"
+require "taobaoSDK/model/discard_info"
+require "taobaoSDK/model/subscription"
+require "taobaoSDK/model/notify_api"
 
 #########################系统API#################################
 require "taobaoSDK/model/time_get_response"

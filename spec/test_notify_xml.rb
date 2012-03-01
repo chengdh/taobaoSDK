@@ -61,14 +61,12 @@ end
 def taobao_increment_customer_stop_xml
 <<XML
 <increment_customer_stop_response>
-    <is_success>
-        true
-    </is_success>
+    <is_success>true</is_success>
 </increment_customer_stop_response>
 XML
 end
 #taobao.increment.customers.get 查询应用为用户开通的增量消息服务
-def taobao_increment_customer_get_xml
+def taobao_increment_customers_get_xml
 <<XML
 <increment_customers_get_response>
     <total_results>
@@ -113,38 +111,28 @@ def taobao_increment_items_get_xml
 <increment_items_get_response>
     <notify_items list="true">
         <notify_item>
-            <iid>
-                123456
-            </iid>
-            <num_iid>
-                123456
-            </num_iid>
+            <iid>123456</iid>
+            <num_iid>123456</num_iid>
             <title>
                 淘宝手机，500元一部
             </title>
             <nick>
                 我是一个用户名
             </nick>
-            <num>
-                123
-            </num>
+            <num>123</num>
             <status>
                 ItemAdd
             </status>
             <changed_fields>
                 title,price
             </changed_fields>
-            <price>
-                10.80
-            </price>
+            <price>10.80</price>
             <modified>
                 2000-01-01 00:00:00
             </modified>
         </notify_item>
     </notify_items>
-    <total_results>
-        10
-    </total_results>
+    <total_results>10</total_results>
 </increment_items_get_response>
 XML
 end

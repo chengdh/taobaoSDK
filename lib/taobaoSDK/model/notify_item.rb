@@ -12,7 +12,7 @@ module TaobaoSDK
     numeric_node :num_iid,"num_iid",:default_value => nil
     text_node :title,"title",:default_value => nil
     text_node :nick,"nick",:default_value => nil
-    numeric_node :num,"",:default_value => 0
+    numeric_node :num,"num",:default_value => 0
     text_node :change_fields,"change_fields",:default_value => nil
     numeric_node :price,"price",:default_value => 0
     text_node :modified,"modified",:default_value => nil
