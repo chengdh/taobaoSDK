@@ -243,6 +243,9 @@ require "taobaoSDK/model/article_biz_order"
 require "taobaoSDK/model/article_sub"
 require "taobaoSDK/model/vas_api"
 
+
+#########################其他相关API#################################
+require "taobaoSDK/model/other_simple_api"
 #TODO 营销API
 #TODO 酒店业务
 #TODO 掌柜说API
