@@ -4,7 +4,6 @@
 module XML
   module Mapping
     module ClassMethods
-
       # The default root element name for this class. Equals the class
       # name, with all parent module names stripped, and with capital
       # letters converted to lowercase and preceded by a dash;

@@ -1,9 +1,11 @@
 #coding: utf-8
+require 'taobaoSDK/rails/initializer' if defined? Rails
 require 'xml/mapping'
 require 'rexml/document'
 require 'default_root_element_name'
 require "taobaoSDK/version"
 require "taobaoSDK/parser"
+require "taobaoSDK/service"
 require "taobaoSDK/model/model"
 
 ##########################用户API#################################
@@ -12,8 +14,6 @@ require "taobaoSDK/model/location"
 require "taobaoSDK/model/user"
 require "taobaoSDK/model/user_get_response"
 require "taobaoSDK/model/users_get_response"
-
-
 
 ##########################类目API#################################
 require "taobaoSDK/model/item_cat"
@@ -243,6 +243,8 @@ require "taobaoSDK/model/article_biz_order"
 require "taobaoSDK/model/article_sub"
 require "taobaoSDK/model/vas_api"
 
+#########################返回的错误对象#################################
+require "taobaoSDK/model/error_response"
 
 #########################其他相关API#################################
 require "taobaoSDK/model/other_simple_api"
