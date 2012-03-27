@@ -6,6 +6,7 @@ require 'default_root_element_name'
 require "taobaoSDK/version"
 require "taobaoSDK/parser"
 require "taobaoSDK/service"
+require "taobaoSDK/session"
 require "taobaoSDK/model/model"
 
 ##########################用户API#################################
