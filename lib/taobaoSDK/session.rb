@@ -27,9 +27,10 @@ module TaobaoSDK
       # Return response in object format
       def invoke(params)
         params = merge_params(params)
-        res = parse_result(RestClient.post(ENV['TAOBAO_ENDPOINT'],params).body)
+        response_body = RestClient.post(ENV['TAOBAO_ENDPOINT'],params).body
+        puts response_body
+        res = parse_result(response_body)
         if res.is_a? TaobaoSDK::ErrorResponse
-          ::Rails.logger.error "taobao error of #{method}: #{res.inspect}"
           raise res.msg
         end
         res

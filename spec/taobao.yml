@@ -1,0 +1,3 @@
+app_key:    'test'
+secret_key: 'test'
+endpoint:   "http://gw.api.tbsandbox.com/router/rest"
