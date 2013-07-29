@@ -5,9 +5,10 @@ require 'rexml/document'
 require 'default_root_element_name'
 require "taobaoSDK/version"
 require "taobaoSDK/parser"
-require "taobaoSDK/service"
 require "taobaoSDK/session"
 require "taobaoSDK/model/model"
+
+require 'taobaoSDK/railtie' if defined? Rails
 
 ##########################用户API#################################
 require "taobaoSDK/model/user_credit"
@@ -255,7 +256,3 @@ require "taobaoSDK/model/other_simple_api"
 #TODO 物流宝API
 #TODO 旺旺API
 
-
-
-module TaobaoSDK
-end
