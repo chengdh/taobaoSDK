@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec","~>2.6"
   s.add_dependency "xml-mapping"
   s.add_dependency "rest-client","~>1.6.7"
+  s.add_dependency "json","~>1.8.0"
 end

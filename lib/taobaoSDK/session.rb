@@ -2,6 +2,7 @@
 require 'digest/md5'
 require 'net/http'
 require 'rest_client'
+require 'json'
 module TaobaoSDK
   class Session
     REQUEST_TIMEOUT = 10
@@ -28,12 +29,41 @@ module TaobaoSDK
       def invoke(params)
         params = merge_params(params)
         response_body = RestClient.post(ENV['TAOBAO_ENDPOINT'],params).body
-        puts response_body
         res = parse_result(response_body)
+=begin
         if res.is_a? TaobaoSDK::ErrorResponse
           raise res.msg
         end
+=end
         res
+      end
+      #获取taobao oauth authorize url
+      def authorize_url
+        "#{ENV['TAOBAO_AUTHORIZE']}?response_type=code&client_id=#{ENV['TAOBAO_API_KEY']}&redirect_uri=#{ENV['TAOBAO_AUTHORIZE_REDIRECT_URI']}&state=1212&view=web" 
+      end
+      #货物authorize hash
+      def authorize_hash
+        {
+          "response_type" => 'code',
+          "client_id" => ENV['TAOBAO_API_KEY'],
+          "redirect_uri" => ENV['TAOBAO_AUTHORIZE_REDIRECT_URI'],
+          "state" => 1212,
+          "view" => 'web' 
+        }
+      end
+      #获取token
+      #params['code']授权码
+      #return hash 解析返回参数后的hash
+      def token(code)
+        params = {
+          :grant_type => "authorization_code",
+          :code  => code,
+          :client_id => ENV["TAOBAO_API_KEY"],
+          :client_secret => ENV["TAOBAO_SECRET_KEY"],
+          :redirect_uri =>  ENV['TAOBAO_TOKEN_REDIRECT_URI'],
+          :view =>  'web'
+        }
+        JSON(RestClient.post(ENV['TAOBAO_TOKEN'],params).body)
       end
 
       private
@@ -62,11 +92,14 @@ module TaobaoSDK
       #   TAOBAO_API_KEY    -> config['app_key']
       #   TAOBAO_SECRET_KEY -> config['secret_key']
       #   TAOBAO_ENDPOINT   -> config['endpoint']
-      #   TAOBAOKE_PID      -> config['pid']
       def export_config_to_env
         ENV['TAOBAO_API_KEY']    = config['app_key']
         ENV['TAOBAO_SECRET_KEY'] = config['secret_key']
         ENV['TAOBAO_ENDPOINT']   = config['endpoint']
+        ENV['TAOBAO_AUTHORIZE']   = config['authorize']
+        ENV['TAOBAO_TOKEN']   = config['token']
+        ENV['TAOBAO_AUTHORIZE_REDIRECT_URI']   = config['authorize_redirect_uri']
+        ENV['TAOBAO_TOKEN_REDIRECT_URI']   = config['token_redirect_uri']
       end
 
       # Return request signature with MD5 signature method

@@ -1,3 +1,12 @@
-app_key:    'test'
-secret_key: 'test'
+app_key:    '1021585439'
+secret_key: 'sandboxe0ff3ffa6a4027424c7f2c49b'
+ 
 endpoint:   "http://gw.api.tbsandbox.com/router/rest"
+#oauth获取授权地址
+authorize:  "https://oauth.tbsandbox.com/authorize"
+#oauth获取令牌地址
+token: "https://oauth.tbsandbox.com/token" 
+#获取授权码回调uri
+authorize_redirect_uri: "http://127.0.0.1:3000/after_authorize"
+#获取令牌回调uri
+token_redirect_uri: "http://127.0.0.1:3000/after_token"

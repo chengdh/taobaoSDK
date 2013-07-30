@@ -256,3 +256,4 @@ require "taobaoSDK/model/other_simple_api"
 #TODO 物流宝API
 #TODO 旺旺API
 
+require 'taobaoSDK/rails/controller' if defined? Rails
