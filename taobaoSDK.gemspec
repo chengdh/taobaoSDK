@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["chengdh"]
   s.email       = ["cheng.donghui@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{TOP API的ruby sdk}
+  s.description = %q{TOP API的ruby 开发包}
 
   s.rubyforge_project = "taobaoSDK"
 
