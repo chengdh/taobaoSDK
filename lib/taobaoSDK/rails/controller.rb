@@ -6,7 +6,7 @@ module TaobaoSDK
         base.extend(ClassMethods)
       end
       def taobao_access_token
-        session[:taobao_session]
+        session[:taobao_access_token]
       end
       #设置访问令牌
       def set_taobao_access_token
@@ -21,6 +21,7 @@ module TaobaoSDK
         else
           res_json = TaobaoSDK::Session.token(code)
           session[:taobao_access_token] = res_json
+          session[:taobao_session_key] = res_json['access_token']
           redirect_to :root
         end
       end

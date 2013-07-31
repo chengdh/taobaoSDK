@@ -28,7 +28,7 @@ module TaobaoSDK
       # Return response in object format
       def invoke(params)
         params = merge_params(params)
-        response_body = RestClient.post(ENV['TAOBAO_ENDPOINT'],params).body
+        response_body = RestClient.post(config['end_point'],params).body
         res = parse_result(response_body)
 =begin
         if res.is_a? TaobaoSDK::ErrorResponse
@@ -39,14 +39,14 @@ module TaobaoSDK
       end
       #获取taobao oauth authorize url
       def authorize_url
-        "#{ENV['TAOBAO_AUTHORIZE']}?response_type=code&client_id=#{ENV['TAOBAO_API_KEY']}&redirect_uri=#{ENV['TAOBAO_AUTHORIZE_REDIRECT_URI']}&state=1212&view=web" 
+        "#{config['authorize']}?response_type=code&client_id=#{config['api_key']}&redirect_uri=#{config['authorize_redirect_uri']}&state=1212&view=web" 
       end
       #货物authorize hash
       def authorize_hash
         {
           "response_type" => 'code',
-          "client_id" => ENV['TAOBAO_API_KEY'],
-          "redirect_uri" => ENV['TAOBAO_AUTHORIZE_REDIRECT_URI'],
+          "client_id" => config['api_key'],
+          "redirect_uri" => config['authorize_redirect_uri'],
           "state" => 1212,
           "view" => 'web' 
         }
@@ -58,12 +58,12 @@ module TaobaoSDK
         params = {
           :grant_type => "authorization_code",
           :code  => code,
-          :client_id => ENV["TAOBAO_API_KEY"],
-          :client_secret => ENV["TAOBAO_SECRET_KEY"],
-          :redirect_uri =>  ENV['TAOBAO_TOKEN_REDIRECT_URI'],
+          :client_id => config["api_key"],
+          :client_secret => config["secret_key"],
+          :redirect_uri =>  config['token_redirect_uri'],
           :view =>  'web'
         }
-        JSON(RestClient.post(ENV['TAOBAO_TOKEN'],params).body)
+        JSON(RestClient.post(config['token'],params).body)
       end
 
       private

@@ -1,5 +1,4 @@
 #coding: utf-8
-require 'taobaoSDK/rails/initializer' if defined? Rails
 require 'xml/mapping'
 require 'rexml/document'
 require 'default_root_element_name'
@@ -8,8 +7,10 @@ require "taobaoSDK/parser"
 require "taobaoSDK/session"
 require "taobaoSDK/model/model"
 
-require 'taobaoSDK/railtie' if defined? Rails
-
+if defined? Rails
+  require 'taobaoSDK/railtie' 
+  require 'taobaoSDK/rails/controller'
+end
 ##########################用户API#################################
 require "taobaoSDK/model/user_credit"
 require "taobaoSDK/model/location"
@@ -255,5 +256,3 @@ require "taobaoSDK/model/other_simple_api"
 #TODO 掌柜说API
 #TODO 物流宝API
 #TODO 旺旺API
-
-require 'taobaoSDK/rails/controller' if defined? Rails
