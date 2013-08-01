@@ -2,9 +2,9 @@
 #扩展rails railitie
 require 'rails'
 module TaobaoSDK
-  class Railtie < Rails::Railtie
+  class Railtie < ::Rails::Railtie
     initializer 'load taobao.yml' do
-      config_file = Rails.root + 'config/taobao.yml'
+      config_file = ::Rails.root + 'config/taobao.yml'
       session.load(config_file) if config_file.file?
     end
   end
