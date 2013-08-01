@@ -1,5 +1,6 @@
 #coding: utf-8
 #生成taobao配置文件
+require 'rails/generators'
 module TaobaoSDK
   module Generators
     class InstallGenerator < Rails::Generators::Base
