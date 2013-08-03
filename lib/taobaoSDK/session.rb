@@ -21,14 +21,14 @@ module TaobaoSDK
       #
       def load(config_file)
         @config = YAML.load_file(config_file)
-        @config = config[Rails.env] if defined? Rails
+        @config = config[::Rails.env] if defined? ::Rails
         check_config_and_export_to_env
       end
 
       # Return response in object format
       def invoke(params)
         params = merge_params(params)
-        response_body = RestClient.post(config['end_point'],params).body
+        response_body = RestClient.post(config['endpoint'],params).body
         res = parse_result(response_body)
 =begin
         if res.is_a? TaobaoSDK::ErrorResponse
@@ -39,7 +39,7 @@ module TaobaoSDK
       end
       #获取taobao oauth authorize url
       def authorize_url
-        "#{config['authorize']}?response_type=code&client_id=#{config['api_key']}&redirect_uri=#{config['authorize_redirect_uri']}&state=1212&view=web" 
+        "#{config['authorize']}?response_type=code&client_id=#{config['app_key']}&redirect_uri=#{config['authorize_redirect_uri']}&state=1212&view=web" 
       end
       #货物authorize hash
       def authorize_hash
@@ -58,7 +58,7 @@ module TaobaoSDK
         params = {
           :grant_type => "authorization_code",
           :code  => code,
-          :client_id => config["api_key"],
+          :client_id => config["app_key"],
           :client_secret => config["secret_key"],
           :redirect_uri =>  config['token_redirect_uri'],
           :view =>  'web'

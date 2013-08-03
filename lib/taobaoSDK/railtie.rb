@@ -5,7 +5,7 @@ module TaobaoSDK
   class Railtie < ::Rails::Railtie
     initializer 'load taobao.yml' do
       config_file = ::Rails.root + 'config/taobao.yml'
-      session.load(config_file) if config_file.file?
+      Session.load(config_file) if config_file.file?
     end
   end
 end
