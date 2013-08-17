@@ -7,9 +7,9 @@ development:
   #oauth获取令牌地址
   token: "https://oauth.tbsandbox.com/token" 
   #获取授权码回调uri
-  authorize_redirect_uri: "http://localhost:3000/after_authorize"
+  authorize_redirect_uri: "http://localhost:3000/authorize/after_authorize"
   #获取令牌回调uri
-  token_redirect_uri: "http://localhost:3000/after_token"
+  token_redirect_uri: "http://localhost:3000/authorize/after_token"
 
 test:
   app_key:    '1021585439'
@@ -20,9 +20,9 @@ test:
   #oauth获取令牌地址
   token: "https://oauth.tbsandbox.com/token" 
   #获取授权码回调uri
-  authorize_redirect_uri: "http://localhost:3000/after_authorize"
+  authorize_redirect_uri: "http://localhost:3000/authorize/after_authorize"
   #获取令牌回调uri
-  token_redirect_uri: "http://localhost:3000/after_token"
+  token_redirect_uri: "http://localhost:3000/authorize/after_token"
 
 production:
   app_key:    'YOUR-KEY'
@@ -33,8 +33,6 @@ production:
   #oauth获取令牌地址
   token: " https://oauth.taobao.com/token" 
   #获取授权码回调uri
-  authorize_redirect_uri: "http://localhost:3000/after_authorize"
+  authorize_redirect_uri: "http://localhost:3000/authorize/after_authorize"
   #获取令牌回调uri
-  token_redirect_uri: "http://localhost:3000/after_token"
-
-
+  token_redirect_uri: "http://localhost:3000/authorize/after_token"

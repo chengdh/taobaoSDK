@@ -46,5 +46,3 @@ module TaobaoSDK
     end
   end
 end
-ActionController::Base.send :include, TaobaoSDK::Rails::Controller
-#ActionController::Base.helper TaobaoSDK::Rails::Controller

@@ -8,7 +8,7 @@ require "taobaoSDK/session"
 require "taobaoSDK/model/model"
 
 if defined? Rails
-  require 'taobaoSDK/railtie' 
+  require 'taobaoSDK/engine' 
   require 'taobaoSDK/rails/controller'
 end
 ##########################用户API#################################
