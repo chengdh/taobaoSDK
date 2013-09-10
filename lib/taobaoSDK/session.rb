@@ -30,18 +30,16 @@ module TaobaoSDK
         params = merge_params(params)
         response_body = RestClient.post(config['endpoint'],params).body
         res = parse_result(response_body)
-=begin
         if res.is_a? TaobaoSDK::ErrorResponse
           raise res.msg
         end
-=end
         res
       end
       #获取taobao oauth authorize url
       def authorize_url
         "#{config['authorize']}?response_type=code&client_id=#{config['app_key']}&redirect_uri=#{config['authorize_redirect_uri']}&state=1212&view=web" 
       end
-      #货物authorize hash
+      #authorize hash
       def authorize_hash
         {
           "response_type" => 'code',
@@ -148,6 +146,8 @@ module TaobaoSDK
       #处理参数
       def merge_params(params)
         params = full_options params
+        #删除空值
+        params.delete_if {|k,v| v.blank?}
         params[:sign] = sign params
         params
       end
