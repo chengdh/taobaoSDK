@@ -146,9 +146,12 @@ module TaobaoSDK
       #处理参数
       def merge_params(params)
         params = full_options params
-        #删除空值
+        #删除空值及image
         params.delete_if {|k,v| v.blank?}
-        params[:sign] = sign params
+        #对参数进行签名(除了image参数外)
+        for_sign_params = params.merge({})
+        for_sign_params.delete(:image)
+        params[:sign] = sign for_sign_params
         params
       end
 
