@@ -39,8 +39,9 @@ module TaobaoSDK
       end
 
       module ClassMethods
-        def acts_as_taobao_controller
-          before_action :set_taobao_access_token,except: [:after_authorize,:authorize_error]
+        def acts_as_taobao_controller(options = {except: [],only: []})
+          options[:except] = (options[:except] + [:after_authorize,:authorize_error])
+          before_filter :set_taobao_access_token,except: options[:except],only: options[:only]
         end
       end
     end
