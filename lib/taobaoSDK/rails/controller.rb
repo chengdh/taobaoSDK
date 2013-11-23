@@ -15,7 +15,7 @@ module TaobaoSDK
           else
             res_json = TaobaoSDK::Session.token(params['code'])
             logger.debug res_json
-            session[:taobao_access_token] = res_json
+            session[:taobao_access_token] = HashWithIndifferentAccess.new(res_json)
             redirect_to :root
           end
         end
@@ -26,9 +26,15 @@ module TaobaoSDK
         def taobao_access_token
           session[:taobao_access_token]
         end
+        #taobao nick
+        #对于含有中文的taobao nick返回的结果使用url进行了编码,需要处理
+        def taobao_nick
+          nick = session[:taobao_access_token][:taobao_user_nick]
+          CGI::unescape(nick)
+        end
 
         def session_key
-          session[:taobao_access_token]['access_token']
+          session[:taobao_access_token][:access_token]
         end
         #设置访问令牌
         def set_taobao_access_token
