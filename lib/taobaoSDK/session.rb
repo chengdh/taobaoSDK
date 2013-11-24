@@ -151,6 +151,7 @@ module TaobaoSDK
         #对参数进行签名(除了image参数外)
         for_sign_params = params.merge({})
         for_sign_params.delete(:image)
+        for_sign_params.delete(:img)
         params[:sign] = sign for_sign_params
         params
       end
