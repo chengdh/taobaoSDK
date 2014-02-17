@@ -21,3 +21,4 @@ public/assets/il_stylesheets.css.gz
 public/assets/il_ie_stylesheets.css.gz
 vendor/
 build/
+pkg/
